@@ -77,14 +77,7 @@ func getEvoPathStr(evoPath []*data.Entity) string {
 	return strings.Join(pathStrList, "=>")
 }
 
-func printEVOInfo(entity *data.Entity) {
-	idx := 0
-	for _, evoPath := range data.EVOPathList {
-		if evoPath[len(evoPath)-1].Key == entity.Key {
-			idx++
-			fmt.Println(idx, getEvoPathStr(evoPath))
-		}
-	}
+func printEntityInfo(entity *data.Entity) {
 	fmt.Println("-------------------")
 	fmt.Println(entity.Phase)
 	fmt.Printf("EvoLock:%v\n", entity.EvoLock)
@@ -95,6 +88,30 @@ func printEVOInfo(entity *data.Entity) {
 	fmt.Println("-------------------")
 }
 
+func printUpEVOInfo(entity *data.Entity) {
+	idx := 0
+	for _, evoPath := range data.EVOPathList {
+		if evoPath[len(evoPath)-1].Key == entity.Key {
+			idx++
+			fmt.Println(fmt.Sprintf("%3d", idx), getEvoPathStr(evoPath))
+		}
+	}
+	printEntityInfo(entity)
+}
+
+func printDownEvoInfo(entity *data.Entity) {
+	idx := 0
+	for _, evoPath := range data.EVOPathList {
+		//evoPathLen := len(evoPath)
+		for _, tEntity := range evoPath {
+			if tEntity.Key == entity.Key {
+				idx++
+				fmt.Println(fmt.Sprintf("%3d", idx), getEvoPathStr(evoPath))
+			}
+		}
+	}
+	printEntityInfo(entity)
+}
 func printOnlyOnePath() {
 	idx := 0
 	for _, evoPath := range data.EVOPathList {
@@ -137,6 +154,11 @@ func main() {
 			fmt.Printf("查找'%v'出错: %v", *name, err)
 			return
 		}
-		printEVOInfo(entity)
+
+		if *t == "up" {
+			printUpEVOInfo(entity)
+		} else {
+			printDownEvoInfo(entity)
+		}
 	}
 }
