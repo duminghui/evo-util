@@ -102,8 +102,11 @@ func printUpEVOInfo(entity *data.Entity) {
 func printDownEvoInfo(entity *data.Entity) {
 	idx := 0
 	for _, evoPath := range data.EVOPathList {
-		//evoPathLen := len(evoPath)
-		for _, tEntity := range evoPath {
+		evoPathLen := len(evoPath)
+		for i, tEntity := range evoPath {
+			if i == evoPathLen-1 {
+				break
+			}
 			if tEntity.Key == entity.Key {
 				idx++
 				fmt.Println(fmt.Sprintf("%3d", idx), getEvoPathStr(evoPath))
