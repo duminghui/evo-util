@@ -475,7 +475,7 @@ entity:
     cname: 狐狸兽
     phase: 成长期
     evoLock: 无
-    evo: 素早さが最高値, 体重13以上
+    evo: 素早さが最高値	13以上	-	-	-	-	-	-	2
     next:
       - ウッドモン
       - ガルルモン
@@ -509,7 +509,7 @@ entity:
     cname: 枯木兽
     phase: 成熟期
     evoLock: 无
-    evo: HP800 防御力80,体重24以上,育成ミス5以下,しつけ60以上,技数14以上,デコード レベル7以上,3
+    evo: HP800 防御力80	24以上	5以下	-	60以上	-	14以上	7以上	3
     next:
       - ライラモン
       - ジュレイモン
@@ -969,7 +969,7 @@ entity:
     cname: 叠龙兽
     phase: 完全体
     evoLock: 无
-    evo:
+    evo: 合体进化 エクスブイモン(XV兽)&スティングモン(刺钉兽)
     next:
       - マグナモン
       - インペリアルドラモンFM
@@ -1114,7 +1114,7 @@ entity:
     cname: 丁香兽
     phase: 完全体
     evoLock: 无
-    evo: MP2600 防御力180 素早さ210、賢さ250,体重35以下,育成ミス5以下,ご機嫌80以上,技数30以上,デコード レベル15以上,5
+    evo: MP2600 防御力180 素早さ210、賢さ250	35以下	5以下	80以上	-	-	30以上	15以上	5
     next:
       - リリスモン
       - ロゼモン
@@ -1412,7 +1412,6 @@ entity:
     evoLock: 无
     evo:
     next:
-      - ラストティラノモン
   - key: X_6_35
     name: ラストティラノモン
     cname: 红锈巨龙兽
@@ -1420,7 +1419,6 @@ entity:
     evoLock: デジタワー50Fでピエモン(小丑兽)とピノッキモン(匹诺曹兽)を倒す,策謀の魔王編をクリアする
     evo:
     next:
-      - リリスモン
   - key: X_6_36
     name: リリスモン
     cname: 莉莉丝兽
@@ -1433,7 +1431,7 @@ entity:
     cname: 蔷薇兽
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: HP3300、MP4600 素早さ490、賢さ560	42以下	5以下	80以上	-	-	30以上	15以上	6
     next:
       - ロゼモンX抗体
   - key: X_6_38
@@ -1441,77 +1439,85 @@ entity:
     cname: 究极V龙兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 神速のX抗体
     next:
   - key: X_6_39
     name: インペリアルドラモンPM
     cname: 帝皇龙兽：圣骑士形态
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 物品オメガブレード
     next:
   - key: X_6_40
     name: オメガモン
     cname: 奥米加兽
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 合体进化 メタルガルルモン(金属加鲁鲁兽)&ウォーグレイモン(战斗暴龙兽)
     next:
+      - オメガモンX抗体
   - key: X_6_41
     name: ウォーグレイモンX抗体
     cname: 战斗暴龙兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 勇気のX抗体
     next:
   - key: X_6_42
     name: ブラックウォーグレイモンX抗体
     cname: 黑战斗暴龙兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 漆黒のX抗体
     next:
   - key: X_6_43
     name: カオスモン
     cname: 混沌兽
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 合体进化 バンチョーレオモン(番长狮子兽)&ダークドラモン(暗龙兽)
     next:
   - key: X_6_44
     name: デュークモンX抗体
     cname: 公爵兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 至高のX抗体
     next:
   - key: X_6_45
     name: ベルゼブモンX抗体
     cname: 别西卜兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 暴食のX抗体
     next:
   - key: X_6_46
     name: マグナモンX抗体
     cname: 玛格纳兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 奇跡のX抗体
     next:
   - key: X_6_47
     name: カオスドラモン
     cname: 混沌龙兽
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 物品クリムゾンメタル
     next:
   - key: X_6_48
     name: ロゼモンX抗体
     cname: 蔷薇兽X抗体
     phase: 究极体
     evoLock: 无
-    evo:
+    evo: 真紅のX抗体
+    next:
+  - key: X_6_49
+    name: オメガモンX抗体
+    cname: 奥米加兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo: 終局のX抗体
     next:
 
 

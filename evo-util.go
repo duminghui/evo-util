@@ -65,43 +65,78 @@ import (
 //	}
 //}
 
+func getEvoPathStr(evoPath []*data.Entity) string {
+	var pathStrList []string
+	for _, entity := range evoPath {
+		pathStr := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
+		if entity.EvoLock != "无" {
+			pathStr = fmt.Sprintf("※%v", pathStr)
+		}
+		pathStrList = append(pathStrList, pathStr)
+	}
+	return strings.Join(pathStrList, "=>")
+}
+
 func printEVOInfo(entity *data.Entity) {
-	var idx = 0
+	idx := 0
 	for _, evoPath := range data.EVOPathList {
 		if evoPath[len(evoPath)-1].Key == entity.Key {
 			idx++
-			var pathStrList []string
-			for _, node := range evoPath {
-				pathStr := fmt.Sprintf("%v(%v)", node.Name, node.CName)
-				if node.EvoLock != "无" {
-					pathStr = fmt.Sprintf("※%v", pathStr)
-				}
-				pathStrList = append(pathStrList, pathStr)
-			}
-			fmt.Println(idx, strings.Join(pathStrList, "=>"))
+			fmt.Println(idx, getEvoPathStr(evoPath))
 		}
 	}
 	fmt.Println("-------------------")
 	fmt.Println(entity.Phase)
 	fmt.Printf("EvoLock:%v\n", entity.EvoLock)
 	fmt.Println("Evo Conditions:")
+	avoConditionsTitle := fmt.Sprintf("%-30s%-8s%-8s%-8s%-8s%-8s%-8s%-10s%-8s", "パラメータ", "体重", "育成ミス", "ご機嫌", "しつけ", "戦闘勝利", "技数", "デコード レベル", "必要数")
+	fmt.Println(avoConditionsTitle)
 	fmt.Println(entity.Evo)
 	fmt.Println("-------------------")
 }
 
-func main() {
-	name := flag.String("name", "", "名称")
-	flag.Parse()
-	if *name == "" {
-		fmt.Println("无名称输入")
-		return
+func printOnlyOnePath() {
+	idx := 0
+	for _, evoPath := range data.EVOPathList {
+		evoPathLen := len(evoPath)
+		if evoPathLen > 3 {
+			entity := evoPath[evoPathLen-1]
+			count := 0
+			for _, cEvoPath := range data.EVOPathList {
+				latestEntity := cEvoPath[len(cEvoPath)-1]
+				if entity == latestEntity {
+					count++
+					if count > 1 {
+						break
+					}
+				}
+			}
+			if count == 1 {
+				idx++
+				fmt.Println(fmt.Sprintf("%3d", idx), getEvoPathStr(evoPath))
+			}
+		}
 	}
-	fmt.Printf("搜索: %v\n", *name)
+}
 
-	entity, err := data.FindEntityByName(*name)
-	if err != nil {
-		fmt.Printf("查找'%v'出错: %v", *name, err)
-		return
+func main() {
+	t := flag.String("t", "", "方式:all,one")
+	name := flag.String("n", "", "名称")
+	flag.Parse()
+	if *t == "one" {
+		printOnlyOnePath()
+	} else {
+		if *name == "" {
+			fmt.Println("无名称输入")
+			return
+		}
+		fmt.Printf("搜索: %v\n", *name)
+
+		entity, err := data.FindEntityByName(*name)
+		if err != nil {
+			fmt.Printf("查找'%v'出错: %v", *name, err)
+			return
+		}
+		printEVOInfo(entity)
 	}
-	printEVOInfo(entity)
 }
