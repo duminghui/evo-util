@@ -1,0 +1,1520 @@
+entity:
+  - key: root
+    name: root
+    cname: root
+    phase: 无
+    evoLock: 无
+    evo: 无
+    next:
+      - 青色
+      - 黄色
+      - 赤色
+      - 緑色
+      - 紫色
+      - 桃色
+      - 灰色
+  - key: X_0_1
+    name: 青色
+    cname: 青色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - ドドモン
+  - key: X_0_2
+    name: 黄色
+    cname: 黄色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - ボタモン
+  - key: X_0_3
+    name: 赤色
+    cname: 赤色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - ジャリモン
+  - key: X_0_4
+    name: 緑色
+    cname: 緑色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - ユラモン
+  - key: X_0_5
+    name: 紫色
+    cname: 紫色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - ポヨモン
+  - key: X_0_6
+    name: 桃色
+    cname: 桃色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - バブモン
+  - key: X_0_7
+    name: 灰色
+    cname: 灰色
+    phase: 蛋
+    evoLock: 无
+    evo: 无
+    next:
+      - プニモン
+  - key: X_1_1
+    name: ドドモン
+    cname: 多多兽
+    phase: 幼生期1
+    evoLock: 无
+    evo: 无
+    next:
+      - ワニャモン
+  - key: X_1_2
+    name: ボタモン
+    cname: 黑球兽
+    phase: 幼生期1
+    evoLock: 无
+    evo: 无
+    next:
+      - コロモン
+  - key: X_1_3
+    name: ジャリモン
+    cname: 沙砾兽
+    evoLock: 无
+    evo: 无
+    phase: 幼生期1
+    next:
+      - ギギモン
+  - key: X_1_4
+    name: ユラモン
+    cname: 浮球兽
+    phase: 幼生期1
+    evoLock: 无
+    evo: 无
+    next:
+      - バドモン
+  - key: X_1_5
+    name: ポヨモン
+    cname: 漂游兽
+    phase: 幼生期1
+    evoLock: 无
+    evo: 无
+    next:
+      - トコモン
+  - key: X_1_6
+    name: バブモン
+    cname: 泡泡兽
+    phase: 幼生期1
+    evoLock: 无
+    evo: 无
+    next:
+      - モチモン
+  - key: X_1_7
+    name: プニモン
+    cname: 普尼兽
+    phase: 幼生期1
+    evoLock: 无
+    evo: 无
+    next:
+      - ツノモン
+  - key: X_2_1
+    name: ワニャモン
+    cname: 汪喵兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - レナモン
+      - パタモン
+      - ガオモン
+      - ゴマモン
+      - プロットモン
+  - key: X_2_2
+    name: コロモン
+    cname: 滚球兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - ゴブリモン
+      - ギルモン
+      - アグモン
+      - ガオモン
+      - チューモン
+  - key: X_2_3
+    name: ギギモン
+    cname: 基基兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - アグモン
+      - キャンドモン
+      - ギルモン
+      - ドルモン
+      - ハグルモン
+  - key: X_2_4
+    name: バドモン
+    cname: 花蕾兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - ワームモン
+      - ピヨモン
+      - ララモン
+      - パルモン
+      - ベタモン
+  - key: X_2_5
+    name: トコモン
+    cname: 迪哥兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - カメモン
+      - ガブモン
+      - ルーチェモン
+      - テントモン
+      - パタモン
+  - key: X_2_6
+    name: モチモン
+    cname: 年糕兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - ピヨモン
+      - テントモン
+      - ハグルモン
+      - ララモン
+      - インプモン
+  - key: X_2_7
+    name: ツノモン
+    cname: 犄角兽
+    phase: 幼生期2
+    evoLock: 无
+    evo: 孵化后6小时
+    next:
+      - ベタモン
+      - ピコデビモン
+      - ガブモン
+      - ゴマモン
+      - ブイモン
+  - key: X_3_1
+    name: アグモン
+    cname: 亚古兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - エンジェモン
+      - ジオグレイモン
+      - グレイモン
+      - ティラノモン
+      - バードラモン
+  - key: X_3_2
+    name: インプモン
+    cname: 小妖兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - キュウビモン
+      - エアドラモン
+      - デビモン
+      - バケモン
+      - ベジーモン
+  - key: X_3_3
+    name: ガオモン
+    cname: 加奥兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ジオグレイモン
+      - ガルルモン
+      - ガオガモン
+      - レオモン
+      - オーガモン
+  - key: X_3_4
+    name: ガブモン
+    cname: 加布兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ブラックテイルモン
+      - レオモン
+      - ガルルモン
+      - グラウモン
+      - グレイモン
+  - key: X_3_5
+    name: カメモン
+    cname: 乌龟兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - カブテリモン
+      - イッカクモン
+      - シードラモン
+      - ガードロモン
+      - テイルモン
+  - key: X_3_6
+    name: キャンドモン
+    cname: 蜡烛兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ジオグレイモン
+      - バードラモン
+      - メラモン
+      - バケモン
+      - グラウモン
+  - key: X_3_7
+    name: ギルモン
+    cname: 基尔兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - メラモン
+      - ティラノモン
+      - グラウモン
+      - ジオグレイモン
+      - デビモン
+  - key: X_3_8
+    name: ゴブリモン
+    cname: 哥布林兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - スティングモン
+      - ティラノモン
+      - オーガモン
+      - クワガーモン
+      - ガオガモン
+  - key: X_3_9
+    name: ゴマモン
+    cname: 哥玛兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - レオモン
+      - シードラモン
+      - イッカクモン
+      - ガオガモン
+      - エクスブイモン
+  - key: X_3_10
+    name: チューモン
+    cname: 吱吱兽
+    evoLock: 无
+    evo:
+    next:
+      - バケモン
+      - オーガモン
+      - ヌメモン
+      - ティラノモン
+      - テイルモン
+  - key: X_3_11
+    name: テントモン
+    cname: 甲虫兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - サンフラウモン
+      - クワガーモン
+      - カブテリモン
+      - スティングモン
+      - エアドラモン
+  - key: X_3_12
+    name: ドルモン
+    cname: 多路兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ガードロモン
+      - エクスブイモン
+      - ドルガモン
+      - ケンタルモン
+      - ガルルモン
+  - key: X_3_13
+    name: ハグルモン
+    cname: 齿轮兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - イッカクモン
+      - カブテリモン
+      - ガードロモン
+      - クワガーモン
+      - メラモン
+  - key: X_3_14
+    name: パタモン
+    cname: 巴达兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - テイルモン
+      - エアドラモン
+      - エンジェモン
+      - バードラモン
+      - ブイドラモン
+  - key: X_3_15
+    name: パルモン
+    cname: 巴鲁兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ベジーモン
+      - ウッドモン
+      - トゲモン
+      - サンフラウモン
+      - ケンタルモン
+  - key: X_3_16
+    name: ピコデビモン
+    cname: 小恶魔兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - グレイモン
+      - バケモン
+      - デビモン
+      - ブラックテイルモン
+      - トゲモン
+  - key: X_3_17
+    name: ピヨモン
+    cname: 比丘兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - エンジェモン
+      - エアドラモン
+      - バードラモン
+      - キュウビモン
+      - ブイドラモン
+  - key: X_3_18
+    name: ブイモン
+    cname: V仔兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - グレイモン
+      - ブイドラモン
+      - エクスブイモン
+      - ガオガモン
+      - メラモン
+  - key: X_3_19
+    name: プロットモン
+    cname: 普罗特兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ケンタルモン
+      - ブラックテイルモン
+      - テイルモン
+      - レオモン
+      - ガードロモン
+  - key: X_3_20
+    name: ベタモン
+    cname: 贝塔兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ベジーモン
+      - イッカクモン
+      - シードラモン
+      - サンフラウモン
+      - オーガモン
+  - key: X_3_21
+    name: ララモン
+    cname: 拉拉兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - ウッドモン
+      - ベジーモン
+      - サンフラウモン
+      - トゲモン
+      - シードラモン
+  - key: X_3_22
+    name: ルーチェモン
+    cname: 光明兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - エンジェモン
+      - ルーチェモンFM
+      - デビモン
+  - key: X_3_23
+    name: レナモン
+    cname: 狐狸兽
+    phase: 成长期
+    evoLock: 无
+    evo: 素早さが最高値, 体重13以上
+    next:
+      - ウッドモン
+      - ガルルモン
+      - キュウビモン
+      - ブラックテイルモン
+      - グラウモン
+  - key: X_3_24
+    name: ワームモン
+    cname: 虫虫兽
+    phase: 成长期
+    evoLock: 无
+    evo:
+    next:
+      - トゲモン
+      - クワガーモン
+      - スティングモン
+      - カブテリモン
+      - ウッドモン
+  - key: X_4_1
+    name: イッカクモン
+    cname: 海狮兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ギガドラモン
+      - ズドモン
+      - マメモン
+  - key: X_4_2
+    name: ウッドモン
+    cname: 枯木兽
+    phase: 成熟期
+    evoLock: 无
+    evo: HP800 防御力80,体重24以上,育成ミス5以下,しつけ60以上,技数14以上,デコード レベル7以上,3
+    next:
+      - ライラモン
+      - ジュレイモン
+      - タオモン
+  - key: X_4_3
+    name: エアドラモン
+    cname: 飞龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - メガシードラモン
+      - メガドラモン
+      - ガルダモン
+  - key: X_4_4
+    name: エクスブイモン
+    cname: XV兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - エアロブイドラモン
+      - パイルドラモン
+      - ライズグレイモン
+  - key: X_4_5
+    name: エンジェモン
+    cname: 天使兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - エンジェウーモン
+      - ホーリーエンジェモン
+      - ヴァンデモン
+  - key: X_4_6
+    name: オーガモン
+    cname: 恶鬼兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ワルもんざえモン
+      - デジタマモン
+      - エテモン
+  - key: X_4_7
+    name: ガードロモン
+    cname: 守卫机器人兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - メタルマメモン
+      - アンドロモン
+      - ギガドラモン
+  - key: X_4_8
+    name: ガオガモン
+    cname: 加奥加兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ワーガルルモン
+      - マッハガオガモン
+      - グラップレオモン
+  - key: X_4_9
+    name: カブテリモン
+    cname:
+    phase: 成熟期
+    evoLock: 无
+    evo: 独角仙兽
+    next:
+      - メタルマメモン
+      - アトラーカブテリモン
+      - ベーダモン
+  - key: X_4_10
+    name: ガルルモン
+    cname: 加鲁鲁兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - パンジャモン
+      - ワーガルルモン
+      - メタルマメモン
+  - key: X_4_11
+    name: キュウビモン
+    cname: 九尾兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - もんざえモン
+      - タオモン
+      - レディーデビモン
+  - key: X_4_12
+    name: グラウモン
+    cname: 古拉兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - スカルグレイモン
+      - メガログラウモン
+      - ブルーメラモン
+  - key: X_4_13
+    name: グレイモン
+    cname: 暴龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - スカルグレイモン
+      - メタルグレイモン
+      - メタルティラノモン
+  - key: X_4_14
+    name: クワガーモン
+    cname: 锹形虫兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ピッコロモン
+      - オオクワモン
+      - ズドモン
+  - key: X_4_15
+    name: ケンタルモン
+    cname: 人马兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - タオモン
+      - ホーリーエンジェモン
+      - アンドロモン
+  - key: X_4_16
+    name: サンフラウモン
+    cname: 向日葵兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - エンジェウーモン
+      - ライラモン
+      - アトラーカブテリモン
+  - key: X_4_17
+    name: シードラモン
+    cname: 海龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - メガドラモン
+      - メガシードラモン
+      - エアロブイドラモン
+  - key: X_4_18
+    name: ジオグレイモン
+    cname: 大地暴龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - メガログラウモン
+      - ライズグレイモン
+      - ギガドラモン
+  - key: X_4_19
+    name: スティングモン
+    cname: 刺钉兽
+    phase: 成熟期
+    evoLock: 合体进化
+    evo:
+    next:
+      - オオクワモン
+      - パイルドラモン
+      - メタルグレイモン
+  - key: X_4_20
+    name: ティラノモン
+    cname: 巨龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - スカルグレイモン
+      - メタルティラノモン
+      - マメモン
+  - key: X_4_21
+    name: テイルモン
+    cname: 迪路兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - もんざえモン
+      - エンジェウーモン
+      - リリモン
+  - key: X_4_22
+    name: デビモン
+    cname: 恶魔兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - レディーデビモン
+      - ヴァンデモン
+      - デスメラモン
+  - key: X_4_23
+    name: トゲモン
+    cname: 仙人掌兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - エテモン
+      - リリモン
+      - マッハガオガモン
+  - key: X_4_24
+    name: ドルガモン
+    cname: 多路加兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ドルグレモン
+  - key: X_4_25
+    name: ヌメモン
+    cname: 鼻涕兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - もんざえモン
+      - エテモン
+  - key: X_4_26
+    name: バードラモン
+    cname: 鸟龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - メガドラモン
+      - ガルダモン
+      - アトラーカブテリモン
+  - key: X_4_27
+    name: バケモン
+    cname: 鬼怪兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ワルもんざえモン
+      - デスメラモン
+      - ブルーメラモン
+  - key: X_4_28
+    name: ブイドラモン
+    cname: V龙兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ガルダモン
+      - エアロブイドラモン
+      - ピッコロモン
+  - key: X_4_29
+    name: ブラックテイルモン
+    cname: 黑迪路兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - ワルもんざえモン
+      - レディーデビモン
+      - ホーリーエンジェモン
+  - key: X_4_30
+    name: ベジーモン
+    cname: 野菜兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - デジタマモン
+      - ジュレイモン
+      - ピッコロモン
+  - key: X_4_31
+    name: メラモン
+    cname: 火焰兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - デスメラモン
+      - ブルーメラモン
+      - ベーダモン
+  - key: X_4_32
+    name: レオモン
+    cname: 狮子兽
+    phase: 成熟期
+    evoLock: 无
+    evo:
+    next:
+      - パンジャモン
+      - グラップレオモン
+      - マメモン
+  - key: X_5_1
+    name: アトラーカブテリモン
+    cname: 阿特拉独角仙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - マグナモン
+      - ヘラクルカブテリモン
+  - key: X_5_2
+    name: アンドロモン
+    cname: 高等机械人兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ボルトモン
+      - ハイアンドロモン
+  - key: X_5_3
+    name: ヴァンデモン
+    cname: 吸血魔兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - バルバモン
+      - ベルゼブモン
+  - key: X_5_4
+    name: エアロブイドラモン
+    cname: 天翔V龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - アルフォースブイドラモン
+  - key: X_5_5
+    name: エテモン
+    cname: 猿猴兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - プラチナヌメモン
+      - メタルエテモン
+  - key: X_5_6
+    name: エンジェウーモン
+    cname: 天女兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - マリンエンジェモン
+      - オファニモン
+  - key: X_5_7
+    name: オオクワモン
+    cname: 大锹形虫兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ヘラクルカブテリモン
+      - グランクワガーモン
+  - key: X_5_8
+    name: ガルダモン
+    cname: 迦楼罗兽
+    phase: 完全体
+    evoLock: コロシアム1F「空とピヨモンの愛情」をクリアする无
+    evo:
+    next:
+      - セラフィモン
+      - ホウオウモン
+  - key: X_5_9
+    name: ギガドラモン
+    cname: 千兆龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ムゲンドラモン
+      - ダークドラモン
+      - メタルシードラモン
+  - key: X_5_10
+    name: グラップレオモン
+    cname: 格斗狮子兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ヴァイクモン
+      - バンチョーレオモン
+  - key: X_5_11
+    name: ジュレイモン
+    cname: 树灵兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - グランクワガーモン
+      - ピノッキモン
+  - key: X_5_12
+    name: スカルグレイモン
+    cname: 骷髅暴龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - シャイングレイモン
+      - ウォーグレイモン
+  - key: X_5_13
+    name: ズドモン
+    cname: 祖顿兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - サーベルレオモン
+      - ヴァイクモン
+  - key: X_5_14
+    name: タオモン
+    cname: 道士兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ホウオウモン
+      - サクヤモン
+  - key: X_5_15
+    name: デジタマモン
+    cname: 数码蛋兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - プリンスマメモン
+      - タイタモン
+      - デュークモン
+  - key: X_5_16
+    name: デスメラモン
+    cname: 死亡火焰兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ベルゼブモン
+      - バルバモン
+  - key: X_5_17
+    name: ドルグレモン
+    cname: 多路暴龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - アルファモン
+  - key: X_5_18
+    name: パイルドラモン
+    cname: 叠龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - マグナモン
+      - インペリアルドラモンFM
+  - key: X_5_19
+    name: パンジャモン
+    cname: 白狮兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - サクヤモン
+      - サーベルレオモン
+  - key: X_5_20
+    name: ピッコロモン
+    cname: 小妖精兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ピエモン
+      - マリンエンジェモン
+  - key: X_5_21
+    name: ブルーメラモン
+    cname: 蓝火焰兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ピエモン
+      - ボルトモン
+  - key: X_5_22
+    name: ベーダモン
+    cname: 入侵兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ヘラクルカブテリモン
+      - ハイアンドロモン
+  - key: X_5_23
+    name: ホーリーエンジェモン
+    cname: 神圣天使兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - オファニモン
+      - セラフィモン
+  - key: X_5_24
+    name: マッハガオガモン
+    cname: 音速加奥加兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - バンチョーレオモン
+      - ミラージュガオガモン
+      - ズィードガルルモン
+  - key: X_5_25
+    name: マメモン
+    cname: 豆豆兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ピノッキモン
+      - プリンスマメモン
+  - key: X_5_26
+    name: メガシードラモン
+    cname: 百万海龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - マリンエンジェモン
+      - メタルシードラモン
+  - key: X_5_27
+    name: メガドラモン
+    cname: 百万龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - メタルガルルモン
+      - ダークドラモン
+  - key: X_5_28
+    name: メガログラウモン
+    cname: 大古拉兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ラストティラノモン
+      - デュークモン
+  - key: X_5_29
+    name: メタルグレイモン
+    cname: 金属暴龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ウォーグレイモン
+      - ビクトリーグレイモン
+  - key: X_5_30
+    name: メタルティラノモン
+    cname: 金属巨龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ムゲンドラモン
+      - ラストティラノモン
+  - key: X_5_31
+    name: メタルマメモン
+    cname: 金属豆豆兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - メタルガルルモン
+      - ハイアンドロモン
+  - key: X_5_32
+    name: もんざえモン
+    cname: 熊仔兽
+    phase: 完全体
+    evoLock: サブイベント073をクリアする
+    evo:
+    next:
+      - メタルエテモン
+      - バンチョーレオモン
+  - key: X_5_33
+    name: ライズグレイモン
+    cname: 跃升暴龙兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - シャイングレイモン
+      - ビクトリーグレイモン
+  - key: X_5_34
+    name: ライラモン
+    cname: 丁香兽
+    phase: 完全体
+    evoLock: 无
+    evo: MP2600 防御力180 素早さ210、賢さ250,体重35以下,育成ミス5以下,ご機嫌80以上,技数30以上,デコード レベル15以上,5
+    next:
+      - リリスモン
+      - ロゼモン
+  - key: X_5_35
+    name: リリモン
+    cname:
+    phase: 完全体
+    evoLock: 无
+    evo: 百合兽
+    next:
+      - サクヤモン
+      - ロゼモン
+  - key: X_5_36
+    name: ルーチェモンFM
+    cname: 光明兽：堕落形态
+    phase: 完全体
+    evoLock: コロシアム天の間「最後の悪夢」をクリアする, 策謀の魔王編をクリア後､コロシアム「天の間」で「最後の悪夢」をクリア
+    evo:
+    next:
+  - key: X_5_37
+    name: レディーデビモン
+    cname: 女恶魔兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - ロゼモン
+      - リリスモン
+  - key: X_5_38
+    name: ワーガルルモン
+    cname: 狼人加鲁鲁兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - メタルガルルモン
+      - ズィードガルルモン
+      - ミラージュガオガモン
+  - key: X_5_39
+    name: ワルもんざえモン
+    cname: 恶门左卫兽
+    phase: 完全体
+    evoLock: 无
+    evo:
+    next:
+      - グランクワガーモン
+      - ベルゼブモン
+  - key: X_6_1
+    name: アルファモン
+    cname: 阿尔法兽
+    phase: 究极体
+    evoLock: 慟哭のX抗体編をクリアする
+    evo:
+    next:
+  - key: X_6_2
+    name: アルフォースブイドラモン
+    cname: 究极V龙兽
+    phase: 究极体
+    evoLock: 策謀の魔王編をクリアする
+    evo:
+    next:
+      - アルフォースブイドラモンX抗体
+  - key: X_6_3
+    name: インペリアルドラモンFM
+    cname: 帝皇龙兽：战士形态
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+      - インペリアルドラモンPM
+  - key: X_6_4
+    name: ヴァイクモン
+    cname: 维京兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_5
+    name: ウォーグレイモン
+    cname: 战斗暴龙兽
+    phase: 究极体
+    evoLock: コロシアム1F「太一とアグモン進化」をクリアする
+    evo:
+    next:
+      - オメガモン
+      - ウォーグレイモンX抗体
+      - ブラックウォーグレイモンX抗体
+  - key: X_6_6
+    name: オファニモン
+    cname: 座天使兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_7
+    name: グランクワガーモン
+    cname: 巨大锹形虫兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_8
+    name: サーベルレオモン
+    cname: 剑狮兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_9
+    name: サクヤモン
+    cname: 咲耶兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_10
+    name: シャイングレイモン
+    cname: 闪光暴龙兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_11
+    name: ズィードガルルモン
+    cname: 终弩加鲁鲁兽
+    phase: 究极体
+    evoLock: 无
+    evo: 必须从メタルガルルモン金属加鲁鲁兽自然死亡的转生蛋培养
+    next:
+  - key: X_6_12
+    name: セラフィモン
+    cname: 炽天使兽
+    phase: 究极体
+    evoLock: コロシアム40F「天使と悪魔」をクリアする, コロシアムで「セラフィモン」を倒す。
+    evo:
+    next:
+  - key: X_6_13
+    name: タイタモン
+    cname: 泰坦兽
+    phase: 究极体
+    evoLock: 策謀の魔王編をクリアする
+    evo:
+    next:
+  - key: X_6_14
+    name: ダークドラモン
+    cname: 暗龙兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+      - カオスモン
+  - key: X_6_15
+    name: デュークモン
+    cname: 公爵兽
+    phase: 究极体
+    evoLock: コロシアム40F「タカトとギルモン」をクリアする, コロシアムでタカトを3回（20F、40F、40F）バトルに勝つ
+    evo:
+    next:
+      - デュークモンX抗体
+  - key: X_6_16
+    name: ハイアンドロモン
+    cname: 高等机械人兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_17
+    name: バルバモン
+    cname: 巴尔巴兽
+    phase: 究极体
+    evoLock: コロシアム天の間「最後の悪夢」をクリアする, 策謀の魔王編をクリア後､コロシアム「天の間」で「最後の悪夢」をクリア
+    evo:
+    next:
+  - key: X_6_18
+    name: バンチョーレオモン
+    cname: 番长狮子兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+      - カオスモン
+  - key: X_6_19
+    name: ピエモン
+    cname: 小丑兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_20
+    name: ビクトリーグレイモン
+    cname: 胜利暴龙兽
+    phase: 究极体
+    evoLock: 必须从6-20デュークモン公爵兽自然死亡的转生蛋培养
+    evo:
+    next:
+  - key: X_6_21
+    name: ピノッキモン
+    cname: 匹诺曹兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_22
+    name: プラチナヌメモン
+    cname: 白金鼻涕兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_23
+    name: プリンスマメモン
+    cname: 王子豆豆兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_24
+    name: ヘラクルカブテリモン
+    cname: 赫拉克勒独角仙兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_25
+    name: ベルゼブモン
+    cname: 别西卜兽
+    phase: 究极体
+    evoLock: バイナリキャッスルでベルゼブモンを倒す, ヴィティウム編で「ベルゼブモン」を倒す
+    evo:
+    next:
+      - ベルゼブモンX抗体
+  - key: X_6_26
+    name: ホウオウモン
+    cname: 凤凰兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_27
+    name: ボルトモン
+    cname: 螺栓兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_28
+    name: マグナモン
+    cname: 玛格纳兽
+    phase: 究极体
+    evoLock: コロシアム40F「奇跡の輝き」をクリア, コロシアム1F「俺のアグモンと勝負だ！」、30Ｆ「兄がお世話になりました」クリア後に、コロシアム40Ｆでマグナモンを倒す。
+    evo:
+    next:
+      - マグナモンX抗体
+  - key: X_6_29
+    name: マリンエンジェモン
+    cname: 海天使兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_30
+    name: ミラージュガオガモン
+    cname: 幻影加奥加兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_31
+    name: ムゲンドラモン
+    cname: 无限龙兽
+    phase: 究极体
+    evoLock: ムゲンマウンテン012Fか050Fでムゲンドラモンを倒す, ムゲンマウンテンでムゲンドラモンを倒す
+    evo:
+    next:
+      - カオスドラモン
+  - key: X_6_32
+    name: メタルエテモン
+    cname: 金属猿猴兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_33
+    name: メタルガルルモン
+    cname: 金属加鲁鲁兽
+    phase: 究极体
+    evoLock: コロシアム1F「ヤマトとガブモンの友情」をクリアする
+    evo:
+    next:
+      - オメガモン
+  - key: X_6_34
+    name: メタルシードラモン
+    cname: 金属海龙兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+      - ラストティラノモン
+  - key: X_6_35
+    name: ラストティラノモン
+    cname: 红锈巨龙兽
+    phase: 究极体
+    evoLock: デジタワー50Fでピエモン(小丑兽)とピノッキモン(匹诺曹兽)を倒す,策謀の魔王編をクリアする
+    evo:
+    next:
+      - リリスモン
+  - key: X_6_36
+    name: リリスモン
+    cname: 莉莉丝兽
+    phase: 究极体
+    evoLock: コロシアム40F「天使と悪魔」をクリアする, 策謀の魔王編で「リリスモン」を倒す。
+    evo:
+    next:
+  - key: X_6_37
+    name: ロゼモン
+    cname: 蔷薇兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+      - ロゼモンX抗体
+  - key: X_6_38
+    name: アルフォースブイドラモンX抗体
+    cname: 究极V龙兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_39
+    name: インペリアルドラモンPM
+    cname: 帝皇龙兽：圣骑士形态
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_40
+    name: オメガモン
+    cname: 奥米加兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_41
+    name: ウォーグレイモンX抗体
+    cname: 战斗暴龙兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_42
+    name: ブラックウォーグレイモンX抗体
+    cname: 黑战斗暴龙兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_43
+    name: カオスモン
+    cname: 混沌兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_44
+    name: デュークモンX抗体
+    cname: 公爵兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_45
+    name: ベルゼブモンX抗体
+    cname: 别西卜兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_46
+    name: マグナモンX抗体
+    cname: 玛格纳兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_47
+    name: カオスドラモン
+    cname: 混沌龙兽
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+  - key: X_6_48
+    name: ロゼモンX抗体
+    cname: 蔷薇兽X抗体
+    phase: 究极体
+    evoLock: 无
+    evo:
+    next:
+
+
+
+
+
