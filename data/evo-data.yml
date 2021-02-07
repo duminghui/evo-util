@@ -214,7 +214,7 @@ entity:
     cname: 亚古兽
     phase: 成长期
     evoLock: 无
-    evo:
+    evo: 攻撃力が最高値	12以下	-	-	-	-	-	-	2
     next:
       - エンジェモン
       - ジオグレイモン
@@ -746,7 +746,7 @@ entity:
     cname: 鸟龙兽
     phase: 成熟期
     evoLock: 无
-    evo:
+    evo: MP700 素早さ90、賢さ60	21以上	3以上	-	-	15以下	35以上	15以上	3
     next:
       - メガドラモン
       - ガルダモン
@@ -933,7 +933,7 @@ entity:
     cname: 道士兽
     phase: 完全体
     evoLock: 无
-    evo:
+    evo: MP2100 攻撃力150 素早さ190、賢さ350	33以上	0	-	90以上	-	40以上	16以上	5
     next:
       - ホウオウモン
       - サクヤモン
