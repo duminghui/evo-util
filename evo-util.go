@@ -9,66 +9,11 @@ import (
 
 //go:generate go generate ./data
 
-//type EVOPath struct {
-//	entity *data.Entity
-//	p      *EVOPath
-//	n      *EVOPath
-//}
-//
-//func getParentEVOPath(entity *data.Entity, nEVOPath *EVOPath) []*EVOPath {
-//	var evoPathList []*EVOPath
-//	if len(entity.P) == 0 {
-//		evoPath := &EVOPath{
-//			entity: entity,
-//			n:      nEVOPath,
-//		}
-//		evoPathList = append(evoPathList, evoPath)
-//	} else {
-//		for _, pKey := range entity.P {
-//			fmt.Println("=====", pKey, "=====")
-//			pEntity, _ := data.EntityMap[pKey]
-//			evoPath := &EVOPath{
-//				entity: entity,
-//				n:      nEVOPath,
-//			}
-//			parentEvoPathList := getParentEVOPath(pEntity, evoPath)
-//			fmt.Println("=====", pKey, len(parentEvoPathList))
-//			if len(parentEvoPathList) == 0 {
-//				evoPathList = append(evoPathList, evoPath)
-//			} else {
-//				for _, parentEvoPath := range parentEvoPathList {
-//					evoPath := &EVOPath{
-//						entity: entity,
-//						p:      parentEvoPath,
-//						n:      nEVOPath,
-//					}
-//					evoPathList = append(evoPathList, evoPath)
-//				}
-//			}
-//		}
-//	}
-//	return evoPathList
-//}
-//
-//func printPath(evoPath *EVOPath) {
-//	if evoPath.p != nil {
-//		printPath(evoPath.p)
-//		fmt.Print(evoPath.entity.CName)
-//		if evoPath.n != nil {
-//			fmt.Print("=>")
-//		} else {
-//			fmt.Println()
-//		}
-//	} else {
-//		fmt.Print(evoPath.entity.CName)
-//		fmt.Print("=>")
-//	}
-//}
-
-func getEvoPathStr(evoPath []*data.Entity) string {
+func getEvoPathStr(evoPath []*data.EVONode) string {
 	var pathStrList []string
-	for _, entity := range evoPath {
-		pathStr := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
+	for _, evoNode := range evoPath {
+		entity := evoNode.Entity
+		pathStr := fmt.Sprintf("%v(%v)@%v", entity.Name, entity.CName, evoNode.Ord)
 		if entity.EvoLock != "无" {
 			pathStr = fmt.Sprintf("※%v", pathStr)
 		}
@@ -91,7 +36,7 @@ func printEntityInfo(entity *data.Entity) {
 func printUpEVOInfo(entity *data.Entity) {
 	idx := 0
 	for _, evoPath := range data.EVOPathList {
-		if evoPath[len(evoPath)-1].Key == entity.Key {
+		if evoPath[len(evoPath)-1].Entity.Key == entity.Key {
 			idx++
 			fmt.Println(fmt.Sprintf("%3d", idx), getEvoPathStr(evoPath))
 		}
@@ -103,11 +48,11 @@ func printDownEvoInfo(entity *data.Entity) {
 	idx := 0
 	for _, evoPath := range data.EVOPathList {
 		evoPathLen := len(evoPath)
-		for i, tEntity := range evoPath {
+		for i, evoNode := range evoPath {
 			if i == evoPathLen-1 {
 				break
 			}
-			if tEntity.Key == entity.Key {
+			if evoNode.Entity.Key == entity.Key {
 				idx++
 				fmt.Println(fmt.Sprintf("%3d", idx), getEvoPathStr(evoPath))
 			}
