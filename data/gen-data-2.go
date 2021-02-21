@@ -13,6 +13,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 )
 
@@ -42,6 +43,20 @@ type entity struct {
 type pOrdInfo struct {
 	pKey string
 	ord  int
+}
+
+type pOrdInfoList []pOrdInfo
+
+func (p pOrdInfoList) Len() int {
+	return len(p)
+}
+
+func (p pOrdInfoList) Less(i, j int) bool {
+	return p[i].ord < p[j].ord
+}
+
+func (p pOrdInfoList) Swap(i, j int) {
+	p[i], p[j] = p[j], p[i]
 }
 
 type nOrdInfo struct {
@@ -168,6 +183,8 @@ func main() {
 		if len(entity.p) == 0 {
 			rootList = append(rootList, entity)
 			rootKeys = append(rootKeys, entity.Key)
+		} else {
+			sort.Sort(pOrdInfoList(entity.p))
 		}
 	}
 

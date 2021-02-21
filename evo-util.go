@@ -82,7 +82,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		var evoCondSpaceIList []interface{}
 		entity, _ := data.EntityMap[ordInfo.EKey]
 		if entity.Key == cKey {
-			evoInfoIList = append(evoInfoIList, "*")
+			evoInfoIList = append(evoInfoIList, "※")
 		} else {
 			evoInfoIList = append(evoInfoIList, "")
 		}
@@ -132,7 +132,7 @@ func getStrSpace(name string) int {
 func getFillLen(fillSize int, str string) int {
 	outAsciiLen := 0
 	for _, c := range str {
-		if c >= utf8.RuneSelf {
+		if c >= utf8.RuneSelf && c != '※' {
 			outAsciiLen++
 		}
 	}
