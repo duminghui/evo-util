@@ -35,13 +35,23 @@ type entity struct {
 	EvoLock string   `yaml:"evoLock"`
 	Evo     string   `yaml:"evo"`
 	Next    []string `yaml:"next,flow"`
-	p       []ordInfo
-	n       []ordInfo
+	p       []pOrdInfo
+	n       []nOrdInfo
 }
 
-type ordInfo struct {
-	key string
-	ord int
+type pOrdInfo struct {
+	pKey string
+	ord  int
+}
+
+type nOrdInfo struct {
+	nKey string
+	ord  int
+}
+
+type nodeInfo struct {
+	pKey string
+	nOrd int
 }
 
 var notExistEntity = &entity{}
@@ -144,8 +154,8 @@ func main() {
 				fmt.Printf("Not Sub Exist Entity: %v(%v): %v\n", entity.Name, entity.CName, sName)
 			} else {
 				ord := getOrdInParentByName(sName, entity.Next)
-				sEntity.p = append(sEntity.p, ordInfo{entity.Key, ord})
-				entity.n = append(entity.n, ordInfo{sEntity.Key, ord})
+				sEntity.p = append(sEntity.p, pOrdInfo{entity.Key, ord})
+				entity.n = append(entity.n, nOrdInfo{sEntity.Key, ord})
 			}
 		}
 		//fmt.Printf("%+v\n", entity)
@@ -164,22 +174,33 @@ func main() {
 	buf.WriteString("var (\n")
 	buf.writeStringf("RootList=[]*Entity{%s}\n", strings.Join(rootKeys, ","))
 	buf.writeStringf("allList=[]*Entity{%s}\n", strings.Join(allKeys, ","))
+	// 2270, 3383
 	buf.WriteString("EVOPathList=[][]*EVONode{\n")
 
 	for _, entity := range rootList {
 		pathKeyMap := make(map[string]int)
-		evoPathList := genEVOPath(entity, 0, entityMap)
+		evoPathList := genEVOPath(entity, entityMap)
 		for _, evoPath := range evoPathList {
 			for idx := range evoPath {
 				if idx > 0 {
 					subPath := evoPath[:idx+1]
 					var pathKeyList []string
 					var nodeList []string
-					for _, node := range subPath {
-						pathKeyList = append(pathKeyList, node.key)
-						nodeStr := fmt.Sprintf(`{%v,%v}`, node.key, node.ord)
+					subPathLen := len(subPath)
+					for i, node := range subPath {
+						nOrd := node.nOrd
+						if i == subPathLen-1 {
+							nOrd = 0
+						}
+						pathKeyList = append(pathKeyList, fmt.Sprintf("%v%v", node.pKey, nOrd))
+						//nNodeOrd := 0
+						//if i < subPathLen {
+						//	nNode
+						//}
+						nodeStr := fmt.Sprintf(`{%v,%v}`, node.pKey, nOrd)
 						nodeList = append(nodeList, nodeStr)
 					}
+					//{X_0_7,1},{X_1_7,1},{X_2_7,5},{X_3_18,0}
 					pathKey := strings.Join(pathKeyList, "")
 					_, ok := pathKeyMap[pathKey]
 					if !ok {
@@ -187,6 +208,8 @@ func main() {
 						buf.WriteString(strings.Join(nodeList, ","))
 						buf.WriteString("},\n")
 						pathKeyMap[pathKey] = 1
+					} else {
+						pathKeyMap[pathKey] = pathKeyMap[pathKey] + 1
 					}
 				}
 			}
@@ -213,11 +236,11 @@ func main() {
 		buf.writeStringf("%v=&Entity{\n", entity.Key)
 		var pInfos []string
 		for _, p := range entity.p {
-			pInfos = append(pInfos, fmt.Sprintf(`{"%v",%v}`, p.key, p.ord))
+			pInfos = append(pInfos, fmt.Sprintf(`{"%v",%v}`, p.pKey, p.ord))
 		}
 		var nInfos []string
 		for _, n := range entity.n {
-			nInfos = append(nInfos, fmt.Sprintf(`{"%v",%v}`, n.key, n.ord))
+			nInfos = append(nInfos, fmt.Sprintf(`{"%v",%v}`, n.nKey, n.ord))
 		}
 		buf.writeStringf(templateStr, entity.Key, entity.Name, entity.CName, entity.Phase, entity.EvoLock,
 			entity.Evo, strings.Join(pInfos, ","), strings.Join(nInfos, ","))
@@ -226,20 +249,19 @@ func main() {
 	buf.WriteString(")\n")
 }
 
-func genEVOPath(entity *entity, ordInParent int, entityMap map[string]*entity, ) [][]ordInfo {
-	var evoPathList [][]ordInfo
-	evoPath := []ordInfo{{entity.Key, ordInParent}}
+func genEVOPath(entity *entity, entityMap map[string]*entity, ) [][]nodeInfo {
+	var evoPathList [][]nodeInfo
 	nLen := len(entity.n)
 	if nLen > 0 {
 		for _, n := range entity.n {
-			subEVOPathList := genEVOPath(entityMap[n.key], n.ord, entityMap)
+			subEVOPathList := genEVOPath(entityMap[n.nKey], entityMap)
 			for _, subEVOPath := range subEVOPathList {
-				newEvoPath := append(evoPath, subEVOPath...)
+				newEvoPath := append([]nodeInfo{{entity.Key, n.ord}}, subEVOPath...)
 				evoPathList = append(evoPathList, newEvoPath)
 			}
 		}
 	} else {
-		evoPathList = append(evoPathList, evoPath)
+		evoPathList = append(evoPathList, []nodeInfo{{entity.Key, 0}})
 	}
 	return evoPathList
 }
