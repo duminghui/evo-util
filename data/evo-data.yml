@@ -1526,7 +1526,13 @@ entity:
     evoLock: 无
     evo: 真紅のX抗体
     next:
-
+  - key: X_6_50
+    name: エグザモン
+    cname: 艾可萨兽
+    phase: 究极体
+    evoLock: 无
+    evo: 竜帝の巨槍
+    next:
 
 
 
