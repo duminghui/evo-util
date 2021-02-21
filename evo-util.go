@@ -55,7 +55,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		title0Str := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
 		title0StrLen := getStrSpace(title0Str)
 		spaceMaxList[0] = int(math.Max(float64(spaceMaxList[0]), float64(title0StrLen)))
-		evoCondStrList := strings.Split(entity.Evo, "\t")
+		evoCondStrList := strings.Split(entity.Evo, ",")
 		for i := 0; i < len(evoCondStrList); i++ {
 			evoCondStr := getStrSpace(evoCondStrList[i])
 			idx := i + 1
@@ -91,7 +91,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		evoInfoIList = append(evoInfoIList, nameStr)
 		evoCondSpaceIList = append(evoCondSpaceIList, getFillLen(spaceMaxList[0], nameStr))
 
-		evoCondStrList := strings.Split(entity.Evo, "\t")
+		evoCondStrList := strings.Split(entity.Evo, ",")
 		if len(evoCondStrList) == 0 {
 			evoInfoIList = append(evoInfoIList, "", "", "", "", "", "", "", "", "")
 			evoCondSpaceIList = append(evoCondSpaceIList, 0, 0, 0, 0, 0, 0, 0, 0, 0)
