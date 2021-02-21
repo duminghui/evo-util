@@ -24,7 +24,7 @@ func getEvoPathStr(evoPath []*data.EVONode) string {
 		}
 		pathStrList = append(pathStrList, pathStr)
 	}
-	return strings.Join(pathStrList, "=>")
+	return strings.Join(pathStrList, " => ")
 }
 
 func printEntityInfo(entity *data.Entity) {
