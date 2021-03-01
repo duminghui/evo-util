@@ -35,6 +35,7 @@ type entity struct {
 	Phase   string   `yaml:"phase"`
 	EvoLock string   `yaml:"evoLock"`
 	Evo     string   `yaml:"evo"`
+	EvoItem string   `yaml:"evoItem"`
 	Next    []string `yaml:"next,flow"`
 	p       []pOrdInfo
 	n       []nOrdInfo
@@ -246,6 +247,7 @@ func main() {
 		Phase:"%v",
 		EvoLock:"%v",
 		Evo:"%v",
+		EvoItem:"%v",
 		P: []OrdInfo{%v},
 		N: []OrdInfo{%v},
 	`
@@ -260,7 +262,7 @@ func main() {
 			nInfos = append(nInfos, fmt.Sprintf(`{"%v",%v}`, n.nKey, n.ord))
 		}
 		buf.writeStringf(templateStr, entity.Key, entity.Name, entity.CName, entity.Phase, entity.EvoLock,
-			entity.Evo, strings.Join(pInfos, ","), strings.Join(nInfos, ","))
+			entity.Evo, entity.EvoItem, strings.Join(pInfos, ","), strings.Join(nInfos, ","))
 		buf.WriteString("}\n")
 	}
 	buf.WriteString(")\n")

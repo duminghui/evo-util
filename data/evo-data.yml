@@ -3,8 +3,9 @@ entity:
     name: root
     cname: root
     phase: 无
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - 青色
       - 黄色
@@ -17,120 +18,135 @@ entity:
     name: 青色
     cname: 青色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ドドモン
   - key: X_0_2
     name: 黄色
     cname: 黄色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ボタモン
   - key: X_0_3
     name: 赤色
     cname: 赤色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ジャリモン
   - key: X_0_4
     name: 緑色
     cname: 緑色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ユラモン
   - key: X_0_5
     name: 紫色
     cname: 紫色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ポヨモン
   - key: X_0_6
     name: 桃色
     cname: 桃色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - バブモン
   - key: X_0_7
     name: 灰色
     cname: 灰色
     phase: 蛋
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - プニモン
   - key: X_1_1
     name: ドドモン
     cname: 多多兽
     phase: 幼生期1
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ワニャモン
   - key: X_1_2
     name: ボタモン
     cname: 黑球兽
     phase: 幼生期1
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - コロモン
   - key: X_1_3
     name: ジャリモン
     cname: 沙砾兽
-    evoLock: 无
+    evoLock:
     evo: 无
     phase: 幼生期1
+    evoItem:
     next:
       - ギギモン
   - key: X_1_4
     name: ユラモン
     cname: 浮球兽
     phase: 幼生期1
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - バドモン
   - key: X_1_5
     name: ポヨモン
     cname: 漂游兽
     phase: 幼生期1
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - トコモン
   - key: X_1_6
     name: バブモン
     cname: 泡泡兽
     phase: 幼生期1
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - モチモン
   - key: X_1_7
     name: プニモン
     cname: 普尼兽
     phase: 幼生期1
-    evoLock: 无
+    evoLock:
     evo: 无
+    evoItem:
     next:
       - ツノモン
   - key: X_2_1
     name: ワニャモン
     cname: 汪喵兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - レナモン
       - パタモン
@@ -141,8 +157,9 @@ entity:
     name: コロモン
     cname: 滚球兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - ゴブリモン
       - ギルモン
@@ -153,8 +170,9 @@ entity:
     name: ギギモン
     cname: 基基兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - アグモン
       - キャンドモン
@@ -165,8 +183,9 @@ entity:
     name: バドモン
     cname: 花蕾兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - ワームモン
       - ピヨモン
@@ -177,8 +196,9 @@ entity:
     name: トコモン
     cname: 迪哥兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - カメモン
       - ガブモン
@@ -189,8 +209,9 @@ entity:
     name: モチモン
     cname: 年糕兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - ピヨモン
       - テントモン
@@ -201,8 +222,9 @@ entity:
     name: ツノモン
     cname: 犄角兽
     phase: 幼生期2
-    evoLock: 无
+    evoLock:
     evo: 孵化后6小时
+    evoItem:
     next:
       - ベタモン
       - ピコデビモン
@@ -213,8 +235,9 @@ entity:
     name: アグモン
     cname: 亚古兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力が最高値,12以下,-,-,-,-,-,-,2
+    evoItem:
     next:
       - エンジェモン
       - ジオグレイモン
@@ -225,8 +248,9 @@ entity:
     name: インプモン
     cname: 小妖兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 賢さが最高値,12以下,-,-,-,-,-,-,2
+    evoItem:
     next:
       - キュウビモン
       - エアドラモン
@@ -237,8 +261,9 @@ entity:
     name: ガオモン
     cname: 加奥兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 素早さが最高値,12以下,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ジオグレイモン
       - ガルルモン
@@ -249,8 +274,9 @@ entity:
     name: ガブモン
     cname: 加布兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: HPが最高値,14以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ブラックテイルモン
       - レオモン
@@ -261,8 +287,9 @@ entity:
     name: カメモン
     cname: 乌龟兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 防御力が最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - カブテリモン
       - イッカクモン
@@ -273,8 +300,9 @@ entity:
     name: キャンドモン
     cname: 蜡烛兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: MPが最高値,12以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ジオグレイモン
       - バードラモン
@@ -285,8 +313,9 @@ entity:
     name: ギルモン
     cname: 基尔兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力が最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - メラモン
       - ティラノモン
@@ -297,8 +326,9 @@ entity:
     name: ゴブリモン
     cname: 哥布林兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: HPが最高値,15以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - スティングモン
       - ティラノモン
@@ -309,8 +339,9 @@ entity:
     name: ゴマモン
     cname: 哥玛兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力が最高値,15以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - レオモン
       - シードラモン
@@ -320,8 +351,9 @@ entity:
   - key: X_3_10
     name: チューモン
     cname: 吱吱兽
-    evoLock: 无
+    evoLock:
     evo: 素早さが最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - バケモン
       - オーガモン
@@ -332,8 +364,9 @@ entity:
     name: テントモン
     cname: 甲虫兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 防御力が最高値,12以下,-,-,-,-,-,-,2
+    evoItem:
     next:
       - サンフラウモン
       - クワガーモン
@@ -344,8 +377,9 @@ entity:
     name: ドルモン
     cname: 多路兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: HPが最高値,15以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ガードロモン
       - エクスブイモン
@@ -356,8 +390,9 @@ entity:
     name: ハグルモン
     cname: 齿轮兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 賢さが最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - イッカクモン
       - カブテリモン
@@ -368,8 +403,9 @@ entity:
     name: パタモン
     cname: 巴达兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: MPが最高値,14以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - テイルモン
       - エアドラモン
@@ -380,8 +416,9 @@ entity:
     name: パルモン
     cname: 巴鲁兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: MPが最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ベジーモン
       - ウッドモン
@@ -392,8 +429,9 @@ entity:
     name: ピコデビモン
     cname: 小恶魔兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 素早さが最高値,14以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - グレイモン
       - バケモン
@@ -404,8 +442,9 @@ entity:
     name: ピヨモン
     cname: 比丘兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: HPが最高値,15以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - エンジェモン
       - エアドラモン
@@ -416,8 +455,9 @@ entity:
     name: ブイモン
     cname: V仔兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 防御力が最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - グレイモン
       - ブイドラモン
@@ -428,8 +468,9 @@ entity:
     name: プロットモン
     cname: 普罗特兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 賢さが最高値,15以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ケンタルモン
       - ブラックテイルモン
@@ -440,8 +481,9 @@ entity:
     name: ベタモン
     cname: 贝塔兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 防御力が最高値,12以下,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ベジーモン
       - イッカクモン
@@ -452,8 +494,9 @@ entity:
     name: ララモン
     cname: 拉拉兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: MPが最高値,12以下,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ウッドモン
       - ベジーモン
@@ -464,8 +507,9 @@ entity:
     name: ルーチェモン
     cname: 光明兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: HP、MPが2500 他のパラメータが 250以上,14以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - エンジェモン
       - ルーチェモンFM
@@ -474,8 +518,9 @@ entity:
     name: レナモン
     cname: 狐狸兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 素早さが最高値,13以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - ウッドモン
       - ガルルモン
@@ -486,8 +531,9 @@ entity:
     name: ワームモン
     cname: 虫虫兽
     phase: 成长期
-    evoLock: 无
+    evoLock:
     evo: 賢さが最高値,14以上,-,-,-,-,-,-,2
+    evoItem:
     next:
       - トゲモン
       - クワガーモン
@@ -498,8 +544,9 @@ entity:
     name: イッカクモン
     cname: 海狮兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1000 攻撃力70 賢さ60,26以上,3以下,-,70以上,-,14以上,7以上,3
+    evoItem: ミスリルのツノ
     next:
       - ギガドラモン
       - ズドモン
@@ -508,8 +555,9 @@ entity:
     name: ウッドモン
     cname: 枯木兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP800 防御力80,24以上,5以下,-,60以上,-,14以上,7以上,3
+    evoItem: 大木の枯れ枝
     next:
       - ライラモン
       - ジュレイモン
@@ -518,8 +566,9 @@ entity:
     name: エアドラモン
     cname: 飞龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP600 素早さ80、賢さ80,26以上,5以下,-,90以上,-,35以上,15以上,3
+    evoItem: 幻獣の翼
     next:
       - メガシードラモン
       - メガドラモン
@@ -528,8 +577,9 @@ entity:
     name: エクスブイモン
     cname: XV兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1200 防御力160 素早さ90,23以上,1以下,-,-,20以上,35以上,15以上,3
+    evoItem: 剛勇な竜翼
     next:
       - エアロブイドラモン
       - パイルドラモン
@@ -538,8 +588,9 @@ entity:
     name: エンジェモン
     cname: 天使兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力80 素早さ80、賢さ80,20以上,0,-,90以上,-,35以上,15以上,3
+    evoItem: 純白の衣
     next:
       - エンジェウーモン
       - ホーリーエンジェモン
@@ -548,8 +599,9 @@ entity:
     name: オーガモン
     cname: 恶鬼兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力100 賢さ60,22以上,1以上,-,-,15以上,14以上,7以上,3
+    evoItem: 鬼のホネ棍棒
     next:
       - ワルもんざえモン
       - デジタマモン
@@ -558,8 +610,9 @@ entity:
     name: ガオガモン
     cname: 加奥加兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力80 素早さ120,18以上,1以下,-,90以上,-,14以上,7以上,3
+    evoItem: 獣のグローブ
     next:
       - ワーガルルモン
       - マッハガオガモン
@@ -568,8 +621,9 @@ entity:
     name: カブテリモン
     cname: 独角仙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP800 攻撃力80、防御力90,25以上,10以下,80以上,-,-,35以上,15以上,3
+    evoItem: 鋼鉄の兜
     next:
       - メタルマメモン
       - アトラーカブテリモン
@@ -578,8 +632,9 @@ entity:
     name: ガルルモン
     cname: 加鲁鲁兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1000 防御力70 素早さ80,23以上,3以下,75以上,-,-,14以上,7以上,3
+    evoItem: ミスリルの毛皮
     next:
       - パンジャモン
       - ワーガルルモン
@@ -588,8 +643,9 @@ entity:
     name: ガードロモン
     cname: 守卫机器人兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP800 防御力120 賢さ80,27以上,10以下,-,-,15以上,28以上,12以上,3
+    evoItem: 鉄壁の全身鎧
     next:
       - メタルマメモン
       - アンドロモン
@@ -598,8 +654,9 @@ entity:
     name: キュウビモン
     cname: 九尾兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP900 攻撃力90 素早さ160,19以上,3以下,-,-,20以上,28以上,12以上,3
+    evoItem: 妖狐の鈴紐
     next:
       - もんざえモン
       - タオモン
@@ -608,8 +665,9 @@ entity:
     name: グラウモン
     cname: 古拉兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP800 攻撃力100、防御力70,24以上,5以下,-,90以上,-,35以上,15以上,3
+    evoItem: 深紅のウィルス
     next:
       - スカルグレイモン
       - メガログラウモン
@@ -618,8 +676,9 @@ entity:
     name: グレイモン
     cname: 暴龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1000 攻撃力80、防御力80,25以上,3以下,65以上,-,-,28以上,12以上,3
+    evoItem: 巨大な爪
     next:
       - スカルグレイモン
       - メタルグレイモン
@@ -628,8 +687,9 @@ entity:
     name: クワガーモン
     cname: 锹形虫兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力100、防御力60,22以上,1以上,-,-,15以上,14以上,7以上,3
+    evoItem: 巨大なハサミ
     next:
       - ピッコロモン
       - オオクワモン
@@ -638,8 +698,9 @@ entity:
     name: ケンタルモン
     cname: 人马兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP800 素早さ90,27以上,5以下,-,70以上,-,14以上,7以上,3
+    evoItem: 半獣半人の鉄兜
     next:
       - タオモン
       - ホーリーエンジェモン
@@ -648,8 +709,9 @@ entity:
     name: サンフラウモン
     cname: 向日葵兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP800 賢さ80,20以上,3以下,80以上,-,-,14以上,7以上,3
+    evoItem: 太陽の実
     next:
       - エンジェウーモン
       - ライラモン
@@ -658,8 +720,9 @@ entity:
     name: ジオグレイモン
     cname: 大地暴龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力120 素早さ80、賢さ60,28以上,5以下,-,-,15以上,35以上,15以上,3
+    evoItem: 凶暴なツノ
     next:
       - メガログラウモン
       - ライズグレイモン
@@ -668,8 +731,9 @@ entity:
     name: シードラモン
     cname: 海龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 防御力80 賢さ90,24以上,10以下,60以上,-,-,14以上,7以上,3
+    evoItem: 海蛇の血
     next:
       - メガドラモン
       - メガシードラモン
@@ -678,8 +742,9 @@ entity:
     name: スティングモン
     cname: 刺钉兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力115 素早さ180,20以上,5以下,-,90以上,-,35以上,15以上,3
+    evoItem: 虫人の暗殺書
     next:
       - オオクワモン
       - パイルドラモン
@@ -688,8 +753,9 @@ entity:
     name: ティラノモン
     cname: 巨龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1000 攻撃力130、防御力50,25以上,5以下,-,70以下,-,14以上,7以上,3
+    evoItem: 爪の化石
     next:
       - スカルグレイモン
       - メタルティラノモン
@@ -698,8 +764,9 @@ entity:
     name: テイルモン
     cname: 迪路兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP1000 防御力80 賢さ60,10以上,1以下,-,-,15以下,14以上,7以上,3
+    evoItem: 神聖なマタタビ
     next:
       - もんざえモン
       - エンジェウーモン
@@ -708,8 +775,9 @@ entity:
     name: デビモン
     cname: 恶魔兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力100 賢さ100,20以上,3以上,-,70以下,-,35以上,15以上,3
+    evoItem: 悪魔の翼
     next:
       - レディーデビモン
       - ヴァンデモン
@@ -718,8 +786,9 @@ entity:
     name: トゲモン
     cname: 仙人掌兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1000 攻撃力80 素早さ60,28以上,5以下,-,60以上,-,14以上,7以上,3
+    evoItem: サボテングローブ
     next:
       - エテモン
       - リリモン
@@ -728,8 +797,9 @@ entity:
     name: ドルガモン
     cname: 多路加兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1800、MP1300 攻撃力160、防御力160 素早さ150,24以上,5以下,-,-,30以上,35以上,15以上,3
+    evoItem: プロトメタル
     next:
       - ドルグレモン
   - key: X_4_25
@@ -738,6 +808,7 @@ entity:
     phase: 成熟期
     evoLock: のろいゲージMAXで進化(合計16回ウンチ) or スカモン大王に進化させてもらう(逆進化も可能)
     evo: -,-,-,-,-,-,-,-,0
+    evoItem: ゴミカスデータ
     next:
   - key: X_4_26
     name: ヌメモン
@@ -745,6 +816,7 @@ entity:
     phase: 成熟期
     evoLock: 成熟期の進化条件を満たしていない状態で成長期の寿命を迎えても進化
     evo: HP1500,20以上,10以下,-,-,-,-,-,3
+    evoItem:
     next:
       - もんざえモン
       - エテモン
@@ -752,8 +824,9 @@ entity:
     name: バケモン
     cname: 鬼怪兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP800 賢さ100,16以上,2以上,80以上,-,-,28以上,12以上,3
+    evoItem: 呪われたボロ布
     next:
       - ワルもんざえモン
       - デスメラモン
@@ -762,8 +835,9 @@ entity:
     name: バードラモン
     cname: 鸟龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP700 素早さ90、賢さ60,21以上,3以上,-,-,15以下,35以上,15以上,3
+    evoItem: 燃え盛る翼
     next:
       - メガドラモン
       - ガルダモン
@@ -772,8 +846,9 @@ entity:
     name: ブイドラモン
     cname: V龙兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: 攻撃力160 素早さ150,22以上,5以下,80以上,-,-,35以上,15以上,3
+    evoItem: Vテイマーの証
     next:
       - ガルダモン
       - エアロブイドラモン
@@ -782,8 +857,9 @@ entity:
     name: ブラックテイルモン
     cname: 黑迪路兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP1000 攻撃力60 素早さ80,10以上,2以上,-,-,16以上,14以上,7以上,3
+    evoItem:
     next:
       - ワルもんざえモン
       - レディーデビモン
@@ -792,8 +868,9 @@ entity:
     name: ベジーモン
     cname: 野菜兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: MP600 賢さ80,18以上,5以下,75以上,-,-,14以上,7以上,3
+    evoItem: 食虫植物の肥料
     next:
       - デジタマモン
       - ジュレイモン
@@ -802,8 +879,9 @@ entity:
     name: メラモン
     cname: 火焰兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP700 攻撃力110 素早さ70,20以上,10以下,-,-,15以上,28以上,12以上,3
+    evoItem: 炎のかけら
     next:
       - デスメラモン
       - ブルーメラモン
@@ -812,8 +890,9 @@ entity:
     name: レオモン
     cname: 狮子兽
     phase: 成熟期
-    evoLock: 无
+    evoLock:
     evo: HP600 攻撃力80 賢さ60,24以上,5以下,-,-,10以上,35以上,15以上,3
+    evoItem: 正義のたてがみ
     next:
       - パンジャモン
       - グラップレオモン
@@ -822,8 +901,9 @@ entity:
     name: アトラーカブテリモン
     cname: 阿特拉独角仙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2600 攻撃力160、防御力280 素早さ200,36以上,10以下,80以上,-,-,40以上,16以上,5
+    evoItem: 王者のツノ
     next:
       - マグナモン
       - ヘラクルカブテリモン
@@ -831,8 +911,9 @@ entity:
     name: アンドロモン
     cname: 机械人兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: P1700 攻撃力280、防御力210 賢さ240,44以上,5以下,-,80以上,-,30以上,15以上,5
+    evoItem: 試作型パーツ
     next:
       - ボルトモン
       - ハイアンドロモン
@@ -840,8 +921,9 @@ entity:
     name: ヴァンデモン
     cname: 吸血魔兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2300、MP1400 攻撃力220、防御力150 素早さ190、賢さ350,34以上,4以上,-,60以下,-,40以上,16以上,5
+    evoItem: 夜の招待状
     next:
       - バルバモン
       - ベルゼブモン
@@ -849,16 +931,18 @@ entity:
     name: エアロブイドラモン
     cname: 天翔V龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2400 攻撃力340、防御力240 素早さ340,46以上,5以下,-,-,35以上,49以上,18以上,5
+    evoItem: 翼竜の刃角
     next:
       - アルフォースブイドラモン
   - key: X_5_5
     name: エテモン
     cname: 猿猴兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2800、MP1000 攻撃力220、防御力240 素早さ350、賢さ180,33以上,2以上,80以上,-,-,30以上,15以上,5
+    evoItem: キングバナナ
     next:
       - プラチナヌメモン
       - メタルエテモン
@@ -866,8 +950,9 @@ entity:
     name: エンジェウーモン
     cname: 天女兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP1900 攻撃力180 素早さ210、賢さ320,35以下,0,80以上,-,-,40以上,16以上,5
+    evoItem: 聖なる弓
     next:
       - マリンエンジェモン
       - オファニモン
@@ -875,8 +960,9 @@ entity:
     name: オオクワモン
     cname: 大锹形虫兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2500 攻撃力320 素早さ180、賢さ80,48以上,15以下,-,-,25以上,30以上,15以上,5
+    evoItem: 凶々しいハサミ
     next:
       - ヘラクルカブテリモン
       - グランクワガーモン
@@ -886,6 +972,7 @@ entity:
     phase: 完全体
     evoLock: コロシアム1F「空とピヨモンの愛情」をクリアする无
     evo: MP1800 防御力140 素早さ310、賢さ270,46以上,10以下,-,-,40以下,40以上,16以上,5
+    evoItem: 大空の翼
     next:
       - セラフィモン
       - ホウオウモン
@@ -893,8 +980,9 @@ entity:
     name: ギガドラモン
     cname: 千兆龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2300、MP1700 攻撃力250、防御力250 素早さ220、賢さ180,60以上,10以下,-,-,35以上,49以上,18以上,5
+    evoItem: ブラックハンド
     next:
       - ムゲンドラモン
       - ダークドラモン
@@ -903,8 +991,9 @@ entity:
     name: グラップレオモン
     cname: 格斗狮子兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1600 攻撃力280、防御力140 素早さ320,44以上,5以下,-,-,35以上,30以上,15以上,5
+    evoItem: 高速タービン
     next:
       - ヴァイクモン
       - バンチョーレオモン
@@ -912,8 +1001,9 @@ entity:
     name: ジュレイモン
     cname: 树灵兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2300 防御力290 賢さ280,52以上,10以下,-,80以上,-,40以上,16以上,5
+    evoItem: 樹海の巨大木
     next:
       - グランクワガーモン
       - ピノッキモン
@@ -921,8 +1011,9 @@ entity:
     name: スカルグレイモン
     cname: 骷髅暴龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2800 攻撃力380、防御力220 素早さ210,55以上,6以上,-,40以下,-,40以上,16以上,5
+    evoItem: 暗黒の骨塊
     next:
       - シャイングレイモン
       - ウォーグレイモン
@@ -930,8 +1021,9 @@ entity:
     name: ズドモン
     cname: 祖顿兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2900 攻撃力230、防御力220 賢さ160,53以上,3以下,-,80以上,-,30以上,15以上,5
+    evoItem: 海獣のツノ
     next:
       - サーベルレオモン
       - ヴァイクモン
@@ -939,8 +1031,9 @@ entity:
     name: タオモン
     cname: 道士兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2100 攻撃力150 素早さ190、賢さ350,33以上,0,-,90以上,-,40以上,16以上,5
+    evoItem: 呪術の霊符
     next:
       - ホウオウモン
       - サクヤモン
@@ -948,8 +1041,9 @@ entity:
     name: デジタマモン
     cname: 数码蛋兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2700、MP2100 攻撃力180、防御力190 素早さ210、賢さ230,32以上,10以下,-,40以下,-,49以上,18以上,5
+    evoItem: 暗黒のタマゴ
     next:
       - プリンスマメモン
       - タイタモン
@@ -958,8 +1052,9 @@ entity:
     name: デスメラモン
     cname: 死亡火焰兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2500 攻撃力380、防御力140 賢さ120,52以上,2以上,-,-,25以上,30以上,15以上,5
+    evoItem: 破壊する獄炎
     next:
       - ベルゼブモン
       - バルバモン
@@ -967,16 +1062,18 @@ entity:
     name: ドルグレモン
     cname: 多路暴龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP3200、MP1700 攻撃力300、防御力320 素早さ270、賢さ210,55以上,10以下,-,-,40以上,49以上,18以上,5
+    evoItem: ブラッディメタル
     next:
       - アルファモン
   - key: X_5_18
     name: パイルドラモン
     cname: 叠龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: 合体进化 エクスブイモン(XV兽)&スティングモン(刺钉兽)
+    evoItem: 古代種の双魂
     next:
       - マグナモン
       - インペリアルドラモンFM
@@ -984,8 +1081,9 @@ entity:
     name: パンジャモン
     cname: 白狮兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2300 攻撃力260、防御力200 素早さ210,46以上,5以下,-,-,30以上,30以上,15以上,5
+    evoItem: 高貴なたてがみ
     next:
       - サクヤモン
       - サーベルレオモン
@@ -993,8 +1091,9 @@ entity:
     name: ピッコロモン
     cname: 小妖精兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2100 攻撃力260 素早さ380、賢さ270,30以下,5以下,95以上,-,-,49以上,18以上,5
+    evoItem: 妖精のヤリ
     next:
       - ピエモン
       - マリンエンジェモン
@@ -1002,8 +1101,9 @@ entity:
     name: ブルーメラモン
     cname: 蓝火焰兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1700 攻撃力350 素早さ180、賢さ100,33以上,15以下,-,-,25以上,30以上,15以上,5
+    evoItem: 蒼く燃える炎
     next:
       - ピエモン
       - ボルトモン
@@ -1011,8 +1111,9 @@ entity:
     name: ベーダモン
     cname: 入侵兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2300 攻撃力210、防御力150 賢さ260,38以上,15以下,-,60以下,-,30以上,15以上,5
+    evoItem: 謎の光線銃
     next:
       - ヘラクルカブテリモン
       - ハイアンドロモン
@@ -1020,8 +1121,9 @@ entity:
     name: ホーリーエンジェモン
     cname: 神圣天使兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1900 防御力300 素早さ170、賢さ240,37以上,0,-,90以上,-,40以上,16以上,5
+    evoItem: 大いなる銀翼
     next:
       - オファニモン
       - セラフィモン
@@ -1029,8 +1131,9 @@ entity:
     name: マッハガオガモン
     cname: 音速加奥加兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1800 攻撃力230 素早さ330、賢さ160,32以上,5以下,-,90以上,-,40以上,16以上,5
+    evoItem: 爆速のコブシ
     next:
       - バンチョーレオモン
       - ミラージュガオガモン
@@ -1039,8 +1142,9 @@ entity:
     name: マメモン
     cname: 豆豆兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1800、MP1400 攻撃力210 素早さ310,20以上,10以下,80以上,-,-,30以上,15以上,5
+    evoItem: ボムグローブ
     next:
       - ピノッキモン
       - プリンスマメモン
@@ -1048,8 +1152,9 @@ entity:
     name: メガシードラモン
     cname: 百万海龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2300 攻撃力180、防御力170 賢さ290,36以上,10以下,-,-,-,49以上,18以上,5
+    evoItem: 雷刃のツノ
     next:
       - マリンエンジェモン
       - メタルシードラモン
@@ -1057,8 +1162,9 @@ entity:
     name: メガドラモン
     cname: 百万龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1700、MP2300 攻撃力300、防御力170 素早さ210、賢さ200,52以上,10以下,-,-,25以上,40以上,16以上,5
+    evoItem: 暗黒竜の壊腕
     next:
       - メタルガルルモン
       - ダークドラモン
@@ -1066,8 +1172,9 @@ entity:
     name: メガログラウモン
     cname: 大古拉兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2600 攻撃力230、防御力300 賢さ130,53以上,5以下,-,-,25以上,40以上,16以上,5
+    evoItem: 巨大な双刃
     next:
       - ラストティラノモン
       - デュークモン
@@ -1075,8 +1182,9 @@ entity:
     name: メタルグレイモン
     cname: 金属暴龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2500 攻撃力280、防御力190 素早さ190,53以上,5以下,-,95以上,25以上,40以上,16以上,5
+    evoItem: メタルパーツ
     next:
       - ウォーグレイモン
       - ビクトリーグレイモン
@@ -1084,8 +1192,9 @@ entity:
     name: メタルティラノモン
     cname: 金属巨龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2200 攻撃力340、防御力210 素早さ160,55以上,0,-,70以下,-,40以上,16以上,5
+    evoItem: ブラックメタル
     next:
       - ムゲンドラモン
       - ラストティラノモン
@@ -1093,8 +1202,9 @@ entity:
     name: メタルマメモン
     cname: 金属豆豆兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP1600 攻撃力310、防御力220 賢さ210,35以上,10以下,-,-,35以上,40以上,16以上,5
+    evoItem: メタルアーマーS
     next:
       - メタルガルルモン
       - ハイアンドロモン
@@ -1104,6 +1214,7 @@ entity:
     phase: 完全体
     evoLock: サブイベント073をクリアする
     evo: HP2800、MP1200 攻撃力180、防御力250 素早さ160、賢さ160,48以上,0,-,-,40以上,49以上,18以上,5
+    evoItem: 愛のぬいぐるみ
     next:
       - メタルエテモン
       - バンチョーレオモン
@@ -1111,8 +1222,9 @@ entity:
     name: ライズグレイモン
     cname: 跃升暴龙兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2100 攻撃力310 素早さ240、賢さ160,48以上,5以下,-,-,25以上,40以上,16以上,5
+    evoItem: 巨大なリボルバー
     next:
       - シャイングレイモン
       - ビクトリーグレイモン
@@ -1120,8 +1232,9 @@ entity:
     name: ライラモン
     cname: 丁香兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2600 防御力180 素早さ210、賢さ250,35以下,5以下,80以上,-,-,30以上,15以上,5
+    evoItem: ライラックの種
     next:
       - リリスモン
       - ロゼモン
@@ -1129,8 +1242,9 @@ entity:
     name: リリモン
     cname: 百合兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2400 攻撃力190 素早さ220、賢さ250,30以下,10以下,-,-,40以下,30以上,15以上,5
+    evoItem: 妖精の葉翼
     next:
       - サクヤモン
       - ロゼモン
@@ -1140,13 +1254,15 @@ entity:
     phase: 完全体
     evoLock: コロシアム天の間「最後の悪夢」をクリアする, 策謀の魔王編をクリア後､コロシアム「天の間」で「最後の悪夢」をクリア
     evo: HP4500、MP4000 攻撃力450、防御力380 素早さ420、賢さ680,40以上,3以下,-,-,-,55以上,20以上 ※必須,5
+    evoItem: 聖魔の翼
     next:
   - key: X_5_37
     name: レディーデビモン
     cname: 女恶魔兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: MP2000 攻撃力210 素早さ320、賢さ160,33以下,4以上,80以上,-,-,40以上,16以上,5
+    evoItem: 貴婦人の黒翼
     next:
       - ロゼモン
       - リリスモン
@@ -1154,8 +1270,9 @@ entity:
     name: ワルもんざえモン
     cname: 恶门左卫兽
     phase: 完全体
-    evoLock: 无
+    evoLock: 惡のぬいぐるみ
     evo: HP3000、MP2500 攻撃力250、防御力200 素早さ200、賢さ250,50以上,3以上,-,-,40以上,49以上,18以上,5
+    evoItem:
     next:
       - グランクワガーモン
       - ベルゼブモン
@@ -1163,8 +1280,9 @@ entity:
     name: ワーガルルモン
     cname: 狼人加鲁鲁兽
     phase: 完全体
-    evoLock: 无
+    evoLock:
     evo: HP2700 攻撃力210、防御力180 素早さ240,43以上,5以下,80以上,-,-,40以上,16以上,5
+    evoItem: ミスリルハンド
     next:
       - メタルガルルモン
       - ズィードガルルモン
@@ -1175,6 +1293,7 @@ entity:
     phase: 究极体
     evoLock: 慟哭のX抗体編をクリアする
     evo: HP6700、MP3700 攻撃力570、防御力620 素早さ530、賢さ520,48以上,1以下,-,-,60以上,55以上,20以上,8
+    evoItem: 漆黒の魔方陣
     next:
   - key: X_6_2
     name: アルフォースブイドラモン
@@ -1182,22 +1301,25 @@ entity:
     phase: 究极体
     evoLock: 策謀の魔王編をクリアする
     evo: HP5700、MP4600 攻撃力600、防御力470 素早さ680、賢さ500,50以下,1以下,-,-,60以上,55以上,20以上,8
+    evoItem: 神速の蒼鎧
     next:
       - アルフォースブイドラモンX抗体
   - key: X_6_3
     name: インペリアルドラモンFM
     cname: 帝皇龙兽：战士形态
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP7200、MP4600 攻撃力680、防御力570 素早さ630、賢さ540,50以上,1以下,-,-,60以上,55以上,20以上,8
+    evoItem: 皇帝竜の古砲
     next:
       - インペリアルドラモンPM
   - key: X_6_4
     name: ヴァイクモン
     cname: 维京兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP6000 攻撃力420、防御力440 賢さ380,53以上,5以下,-,75以上,-,30以上,15以上,6
+    evoItem: 凍土の毛皮
     next:
   - key: X_6_5
     name: ウォーグレイモン
@@ -1205,6 +1327,7 @@ entity:
     phase: 究极体
     evoLock: コロシアム1F「太一とアグモン進化」をクリアする
     evo: HP4500、MP2500 攻撃力480、防御力420 素早さ380、賢さ360,55以上,10以下,-,95以上,40以上,40以上,16以上,8
+    evoItem: 勇気の証
     next:
       - オメガモン
       - ウォーグレイモンX抗体
@@ -1213,36 +1336,41 @@ entity:
     name: オファニモン
     cname: 座天使兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP5800、MP3700 防御力490 賢さ560,45以下,0,-,95以上,-,50以上,18以上,6
+    evoItem: 聖母の投槍
     next:
   - key: X_6_7
     name: グランクワガーモン
     cname: 巨大锹形虫兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4500、MP3200 攻撃力580、防御力480,52以上,10以下,-,55以下,-,40以上,16以上,6
+    evoItem: 悪魔のハサミ
     next:
   - key: X_6_8
     name: サクヤモン
     cname: 咲耶兽
     phase: 究极体
-    evoLock: 无
+    evoLock: 巫女の錫杖
     evo: MP3900 攻撃力340 素早さ490、賢さ680,40以下,0,-,90以上,-,50以上,18以上,6
+    evoItem:
     next:
   - key: X_6_9
     name: サーベルレオモン
     cname: 剑狮兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4500 攻撃力590、防御力390 素早さ640,50以上,10以下,-,-,45以上,50以上,18以上,6
+    evoItem: 古獅子の大牙
     next:
   - key: X_6_10
     name: シャイングレイモン
     cname: 闪光暴龙兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4000、MP4200 攻撃力600 素早さ520、賢さ400,48以上,5以下,75以上,-,40以上,40以上,16以上,7
+    evoItem: 太陽の大翼
     next:
   - key: X_6_11
     name: ズィードガルルモン
@@ -1250,6 +1378,7 @@ entity:
     phase: 究极体
     evoLock: 必须从メタルガルルモン金属加鲁鲁兽自然死亡的转生蛋培养
     evo: HP5500 攻撃力460、防御力410 素早さ530,45以上,10以下,-,-,40以上,50以上,18以上,6
+    evoItem: 獣の巨砲
     next:
   - key: X_6_12
     name: セラフィモン
@@ -1257,6 +1386,7 @@ entity:
     phase: 究极体
     evoLock: コロシアム40F「天使と悪魔」をクリアする, コロシアムで「セラフィモン」を倒す。
     evo: HP4000 攻撃力600 素早さ500、賢さ500,46以上,0,-,90以上,-,40以上,16以上,6
+    evoItem: 黄金の天翼
     next:
   - key: X_6_13
     name: タイタモン
@@ -1264,13 +1394,15 @@ entity:
     phase: 究极体
     evoLock: 策謀の魔王編をクリアする
     evo: HP6000、MP3200 攻撃力700、防御力400 素早さ400,62以上,2以上,-,-,50以上,40以上,16以上,7
+    evoItem: 鬼神の怨骨刃
     next:
   - key: X_6_14
     name: ダークドラモン
     cname: 暗龙兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: MP6500 攻撃力550、防御力400 素早さ430、賢さ680,55以上,10以下,-,-,40以上,40以上,16以上,7
+    evoItem: ダークマター
     next:
       - カオスモン
   - key: X_6_15
@@ -1279,14 +1411,16 @@ entity:
     phase: 究极体
     evoLock: コロシアム40F「タカトとギルモン」をクリアする, コロシアムでタカトを3回（20F、40F、40F）バトルに勝つ
     evo: HP5000、MP2500 攻撃力500、防御力600 賢さ550,52以上,5以下,-,75以上,40以上,40以上,16以上,7
+    evoItem: 完璧なる聖槍
     next:
       - デュークモンX抗体
   - key: X_6_16
     name: ハイアンドロモン
     cname: 高等机械人兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4300 攻撃力540、防御力480 賢さ420,62以上,5以下,-,-,40以上,40以上,16以上,6
+    evoItem: 完成型パーツ
     next:
   - key: X_6_17
     name: バルバモン
@@ -1294,21 +1428,24 @@ entity:
     phase: 究极体
     evoLock: コロシアム天の間「最後の悪夢」をクリアする, 策謀の魔王編をクリア後､コロシアム「天の間」で「最後の悪夢」をクリア
     evo: HP5000、MP8000 攻撃力650、防御力650 素早さ550、賢さ850,50以下,5以上,-,20以下,-,55以上,20以上,8
+    evoItem: 強欲なる老髭
     next:
   - key: X_6_18
     name: バンチョーレオモン
     cname: 番长狮子兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4800 攻撃力460、防御力400 素早さ350、賢さ420,40以上,0,-,-,40以上,50以上,18以上,7
+    evoItem: 正義の学ラン
     next:
       - カオスモン
   - key: X_6_19
     name: ピエモン
     cname: 小丑兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP5900、MP4100 攻撃力450、防御力420 素早さ450、賢さ520,46以上,3以上,-,45以下,-,55以上,20以上,8
+    evoItem: 道化師の仮面
     next:
   - key: X_6_20
     name: ビクトリーグレイモン
@@ -1316,34 +1453,39 @@ entity:
     phase: 究极体
     evoLock: 必须从6-20デュークモン公爵兽自然死亡的转生蛋培养
     evo: HP5000 攻撃力620、防御力540 賢さ350,52以上,10以下,-,-,40以上,50以上,18以上,6
+    evoItem: 巨大な破砕剣
     next:
   - key: X_6_21
     name: ピノッキモン
     cname: 匹诺曹兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP5200、MP4000 素早さ420、賢さ480,42以上,10以下,75以上,-,-,40以上,16以上,6
+    evoItem: 呪いのパペット
     next:
   - key: X_6_22
     name: プラチナヌメモン
     cname: 白金鼻涕兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP5000、MP3200 防御力550 賢さ480,49以上,15以下,90以上,-,-,40以上,16以上,6
+    evoItem: 極彩色プラチナ
     next:
   - key: X_6_23
     name: プリンスマメモン
     cname: 王子豆豆兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP5300 防御力350 素早さ550、賢さ420,35以下,3以下,100以上,-,-,40以上,16以上,6
+    evoItem: 王家の偽証
     next:
   - key: X_6_24
     name: ヘラクルカブテリモン
     cname: 赫拉克勒独角仙兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP5500 攻撃力370、防御力560 素早さ360,48以上,5以下,80以上,-,-,40以上,16以上,6
+    evoItem: 黄金の甲冑
     next:
   - key: X_6_25
     name: ベルゼブモン
@@ -1351,21 +1493,24 @@ entity:
     phase: 究极体
     evoLock: バイナリキャッスルでベルゼブモンを倒す, ヴィティウム編で「ベルゼブモン」を倒す
     evo: HP5000、MP4000 攻撃力650 素早さ650、賢さ450,44以上,5以上,-,55以下,-,40以上,16以上,7
+    evoItem: 地獄の拳銃
     next:
       - ベルゼブモンX抗体
   - key: X_6_26
     name: ホウオウモン
     cname: 凤凰兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP2500、MP3800 防御力340 素早さ380、賢さ490,33以上,10以下,100以上,-,-,40以上,16以上,7
+    evoItem: 黄金色の聖翼
     next:
   - key: X_6_27
     name: ボルトモン
     cname: 螺栓兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4800 攻撃力600、防御力420 賢さ320,58以上,15以下,-,-,35以上,40以上,16以上,6
+    evoItem: 悲しみの戦斧
     next:
   - key: X_6_28
     name: マグナモン
@@ -1373,21 +1518,24 @@ entity:
     phase: 究极体
     evoLock: コロシアム40F「奇跡の輝き」をクリア, コロシアム1F「俺のアグモンと勝負だ！」、30Ｆ「兄がお世話になりました」クリア後に、コロシアム40Ｆでマグナモンを倒す。
     evo: HP6200 攻撃力550、防御力800 素早さ550,42以上,5以下,-,80以上,-,50以上,18以上,6
+    evoItem: 奇跡の黄金鎧
     next:
       - マグナモンX抗体
   - key: X_6_29
     name: マリンエンジェモン
     cname: 海天使兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: MP3800 防御力380 素早さ420、賢さ500,40以下,0,80以上,-,-,40以上,16以上,6
+    evoItem: 天使の聖水
     next:
   - key: X_6_30
     name: ミラージュガオガモン
     cname: 幻影加奥加兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP3500 攻撃力550、防御力320 素早さ680,38以上,5以下,-,90以上,-,40以上,16以上,6
+    evoItem: 満月のツメ
     next:
   - key: X_6_31
     name: ムゲンドラモン
@@ -1395,14 +1543,16 @@ entity:
     phase: 究极体
     evoLock: ムゲンマウンテン012Fか050Fでムゲンドラモンを倒す, ムゲンマウンテンでムゲンドラモンを倒す
     evo: HP6200、MP4200 攻撃力750、防御力580 素早さ420、賢さ500,65以上,3以上,-,-,55以上,55以上,20以上,8
+    evoItem: ムゲンメタル
     next:
       - カオスドラモン
   - key: X_6_32
     name: メタルエテモン
     cname: 金属猿猴兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP4400、MP3200 攻撃力410、防御力640 素早さ530、賢さ380,45以上,4以上,80以上,-,-,40以上,16以上,8
+    evoItem: メタルバナナ
     next:
   - key: X_6_33
     name: メタルガルルモン
@@ -1410,14 +1560,16 @@ entity:
     phase: 究极体
     evoLock: コロシアム1F「ヤマトとガブモンの友情」をクリアする
     evo: HP4500 攻撃力380、防御力520 素早さ550,43以上,5以下,80以上,-,-,40以上,16以上,6
+    evoItem: アイスメタル
     next:
       - オメガモン
   - key: X_6_34
     name: メタルシードラモン
     cname: 金属海龙兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: MP4500 攻撃力350 素早さ450、賢さ580,49以上,10以下,80以上,-,-,40以上,16以上,6
+    evoItem: CHO-合金
     next:
   - key: X_6_35
     name: ラストティラノモン
@@ -1425,6 +1577,7 @@ entity:
     phase: 究极体
     evoLock: デジタワー50Fでピエモン(小丑兽)とピノッキモン(匹诺曹兽)を倒す,策謀の魔王編をクリアする
     evo: HP5600、MP3600 攻撃力680、防御力420 素早さ400,65以上,0,-,-,50以上,40以上,16以上,7
+    evoItem: 錆びた電磁砲
     next:
   - key: X_6_36
     name: リリスモン
@@ -1432,106 +1585,121 @@ entity:
     phase: 究极体
     evoLock: コロシアム40F「天使と悪魔」をクリアする, 策謀の魔王編で「リリスモン」を倒す。
     evo: MP4600 攻撃力580、防御力440 素早さ520、賢さ650,40以下,5以上,80以上,-,-,40以上,16以上,7
+    evoItem: 妖艶なかんざし
     next:
   - key: X_6_37
     name: ロゼモン
     cname: 蔷薇兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: HP3300、MP4600 素早さ490、賢さ560,42以下,5以下,80以上,-,-,30以上,15以上,6
+    evoItem: 愛と美の宝玉
     next:
       - ロゼモンX抗体
   - key: X_6_38
     name: アルフォースブイドラモンX抗体
     cname: 究极V龙兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 神速のX抗体
+    evoItem: 神速のX抗体
     next:
   - key: X_6_39
     name: インペリアルドラモンPM
     cname: 帝皇龙兽：圣骑士形态
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 物品オメガブレード
+    evoItem: オメガブレード
     next:
   - key: X_6_40
     name: オメガモン
     cname: 奥米加兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 合体进化 メタルガルルモン(金属加鲁鲁兽)&ウォーグレイモン(战斗暴龙兽)
+    evoItem: 聖騎士の証
     next:
       - オメガモンX抗体
   - key: X_6_41
     name: ウォーグレイモンX抗体
     cname: 战斗暴龙兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 勇気のX抗体
+    evoItem:
     next:
   - key: X_6_42
     name: ブラックウォーグレイモンX抗体
     cname: 黑战斗暴龙兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 漆黒のX抗体
+    evoItem: 漆黒のX抗体
     next:
   - key: X_6_43
     name: オメガモンX抗体
     cname: 奥米加兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 終局のX抗体
+    evoItem: 終局のX抗体
     next:
   - key: X_6_44
     name: カオスモン
     cname: 混沌兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 合体进化 バンチョーレオモン(番长狮子兽)&ダークドラモン(暗龙兽)
+    evoItem: 混沌の魂
     next:
   - key: X_6_45
     name: デュークモンX抗体
     cname: 公爵兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 至高のX抗体
+    evoItem: 至高のX抗体
     next:
   - key: X_6_46
     name: ベルゼブモンX抗体
     cname: 别西卜兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 暴食のX抗体
+    evoItem: 暴食のX抗体
     next:
   - key: X_6_47
     name: マグナモンX抗体
     cname: 玛格纳兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 奇跡のX抗体
+    evoItem: 奇跡のX抗体
     next:
   - key: X_6_48
     name: カオスドラモン
     cname: 混沌龙兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 物品クリムゾンメタル
+    evoItem: クリムゾンメタル
     next:
   - key: X_6_49
     name: ロゼモンX抗体
     cname: 蔷薇兽X抗体
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 真紅のX抗体
+    evoItem: 真紅のX抗体
     next:
   - key: X_6_50
     name: エグザモン
     cname: 艾可萨兽
     phase: 究极体
-    evoLock: 无
+    evoLock:
     evo: 竜帝の巨槍
+    evoItem: 竜帝の巨槍
     next:
 
 

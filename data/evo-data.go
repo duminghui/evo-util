@@ -13,6 +13,7 @@ type Entity struct {
 	Phase   string
 	EvoLock string
 	Evo     string
+	EvoItem string
 	P       []OrdInfo
 	N       []OrdInfo
 }

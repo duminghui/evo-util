@@ -44,11 +44,12 @@ func printEntityInfo(entity *data.Entity) {
 }
 
 func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
-	mainStrTmplTmpl := "%%1v%%1v %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs"
-	titleList := []string{"", "パラメータ", "体重", "育成ミス", "ご機嫌", "しつけ", "戦闘勝利", "技数", "[デコード レベル]", "必要数"}
+	mainStrTmplTmpl := "%%1v%%1v %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-s"
+	titleList := []string{"", "パラメータ", "体重", "育成ミス", "ご機嫌", "しつけ", "戦闘勝利", "技数", "[デコード レベル]", "必要数", "Evo Item"}
 	spaceMaxList := []int{1, getStrSpace(titleList[1]), getStrSpace(titleList[2]), getStrSpace(titleList[3]),
 		getStrSpace(titleList[4]), getStrSpace(titleList[5]), getStrSpace(titleList[6]),
-		getStrSpace(titleList[7]), getStrSpace(titleList[8]), getStrSpace(titleList[9])}
+		getStrSpace(titleList[7]), getStrSpace(titleList[8]), getStrSpace(titleList[9]),
+		getStrSpace(titleList[10])}
 
 	for _, ordInfo := range ordInfoList {
 		entity, _ := data.EntityMap[ordInfo.EKey]
@@ -93,16 +94,17 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 
 		evoCondStrList := strings.Split(entity.Evo, ",")
 		if len(evoCondStrList) == 0 {
-			evoInfoIList = append(evoInfoIList, "", "", "", "", "", "", "", "", "")
+			evoInfoIList = append(evoInfoIList, "", "", "", "", "", "", "", "", "", "")
 			evoCondSpaceIList = append(evoCondSpaceIList, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 		} else if len(evoCondStrList) == 1 {
-			evoInfoIList = append(evoInfoIList, entity.Evo, "", "", "", "", "", "", "", "")
+			evoInfoIList = append(evoInfoIList, entity.Evo, "", "", "", "", "", "", "", "", "")
 			evoCondSpaceIList = append(evoCondSpaceIList, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 		} else {
 			for i, evoCond := range evoCondStrList {
 				evoInfoIList = append(evoInfoIList, evoCond)
 				evoCondSpaceIList = append(evoCondSpaceIList, getFillLen(spaceMaxList[i+1], evoCond))
 			}
+			evoInfoIList = append(evoInfoIList, entity.EvoItem)
 		}
 		evoCondTmpl := fmt.Sprintf(mainStrTmplTmpl, evoCondSpaceIList...)
 		fmt.Printf(evoCondTmpl, evoInfoIList...)
