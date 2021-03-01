@@ -24,13 +24,13 @@ type OrdInfo struct {
 
 type EVONode struct {
 	Entity *Entity
-	Ord  int
+	Ord    int
 }
 
 var NotExistEntityError = errors.New("entity not find")
 
 func FindEntityByName(name string) (*Entity, error) {
-	for _, entity := range allList {
+	for _, entity := range AllList {
 		if entity.Name == name || entity.CName == name {
 			return entity, nil
 		}

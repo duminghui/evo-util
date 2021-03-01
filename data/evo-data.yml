@@ -678,7 +678,7 @@ entity:
     name: スティングモン
     cname: 刺钉兽
     phase: 成熟期
-    evoLock:
+    evoLock: 无
     evo: 攻撃力115 素早さ180,20以上,5以下,-,90以上,-,35以上,15以上,3
     next:
       - オオクワモン

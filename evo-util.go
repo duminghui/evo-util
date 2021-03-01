@@ -120,9 +120,9 @@ func printEvoCompareInfo(entity *data.Entity) {
 	}
 }
 
-func getStrSpace(name string) int {
-	nameLen := utf8.RuneCountInString(name)
-	for _, c := range name {
+func getStrSpace(str string) int {
+	nameLen := utf8.RuneCountInString(str)
+	for _, c := range str {
 		if c >= utf8.RuneSelf {
 			nameLen++
 		}
@@ -205,12 +205,36 @@ func printOnlyOnePath() {
 	}
 }
 
+func printLockInfo() {
+	idx := 0
+	maxNameSpace := 0
+	var entityList []*data.Entity
+	for _, entity := range data.AllList {
+		if entity.EvoLock != "无" {
+			idx++
+			name := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
+			maxNameSpace = int(math.Max(float64(maxNameSpace), float64(getStrSpace(name))))
+			entityList = append(entityList, entity)
+		}
+	}
+	msgTmplTmpl := "%%2v %%-%vs %%v"
+	for i, entity := range entityList {
+		name := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
+		fillLen := getFillLen(maxNameSpace, name)
+		msgTmpl := fmt.Sprintf(msgTmplTmpl, fillLen)
+		fmt.Printf(msgTmpl, i+1, name, entity.EvoLock)
+		fmt.Println()
+	}
+}
+
 func main() {
-	t := flag.String("t", "", "方式:one,up,down,comp")
+	t := flag.String("t", "", "方式:one,lock,up,down,comp")
 	name := flag.String("n", "", "名称")
 	flag.Parse()
 	if *t == "one" {
 		printOnlyOnePath()
+	} else if *t == "lock" {
+		printLockInfo()
 	} else {
 		if *name == "" {
 			fmt.Println("无名称输入")

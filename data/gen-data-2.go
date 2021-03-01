@@ -190,7 +190,7 @@ func main() {
 
 	buf.WriteString("var (\n")
 	buf.writeStringf("RootList=[]*Entity{%s}\n", strings.Join(rootKeys, ","))
-	buf.writeStringf("allList=[]*Entity{%s}\n", strings.Join(allKeys, ","))
+	buf.writeStringf("AllList=[]*Entity{%s}\n", strings.Join(allKeys, ","))
 	// 2270, 3383
 	buf.WriteString("EVOPathList=[][]*EVONode{\n")
 
