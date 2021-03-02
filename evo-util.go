@@ -79,13 +79,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 
 		idx = 3
 		evoCondList := strings.Split(entity.Evo, ",")
-		fillLen := 0
 		evoCondStrListLen := len(evoCondList)
-		if evoCondStrListLen == 0 {
-			fillLen = 9
-		} else if evoCondStrListLen == 1 {
-			fillLen = 8
-		}
 		tmpIdx := idx
 		for i, evoCond := range evoCondList {
 			idx = tmpIdx + i
@@ -94,6 +88,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		}
 		idx += evoCondStrListLen % 9
 		tmpIdx = idx
+		fillLen := 9 - evoCondStrListLen
 		for i := 0; i < fillLen; i++ {
 			idx = tmpIdx + i
 			spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(1)))
