@@ -186,7 +186,9 @@ func printDownEvoInfo(entity *data.Entity) {
 		for i, evoNode := range evoPath {
 			if evoNode.Entity == entity {
 				subEvoPath := evoPath[i:]
-				if len(subEvoPath) > 1 {
+				lenSubEvoPath := len(subEvoPath)
+				if len(subEvoPath[lenSubEvoPath-1].Entity.N) == 0 {
+					//if len(subEvoPath) > 1 {
 					var pathKeyList []string
 					for _, subEvoNode := range subEvoPath {
 						pathKeyList = append(pathKeyList, fmt.Sprintf("%v%v", subEvoNode.Entity.Key, subEvoNode.Ord))
