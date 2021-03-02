@@ -351,6 +351,7 @@ entity:
   - key: X_3_10
     name: チューモン
     cname: 吱吱兽
+    phase: 成长期
     evoLock:
     evo: 素早さが最高値,13以上,-,-,-,-,-,-,2
     evoItem:
@@ -1072,7 +1073,7 @@ entity:
     cname: 叠龙兽
     phase: 完全体
     evoLock:
-    evo: 合体进化 エクスブイモン(XV兽)&スティングモン(刺钉兽)
+    evo: エクスブイモン(XV兽)&スティングモン(刺钉兽)
     evoItem: 古代種の双魂
     next:
       - マグナモン
@@ -1270,9 +1271,9 @@ entity:
     name: ワルもんざえモン
     cname: 恶门左卫兽
     phase: 完全体
-    evoLock: 惡のぬいぐるみ
+    evoLock:
     evo: HP3000、MP2500 攻撃力250、防御力200 素早さ200、賢さ250,50以上,3以上,-,-,40以上,49以上,18以上,5
-    evoItem:
+    evoItem: 惡のぬいぐるみ
     next:
       - グランクワガーモン
       - ベルゼブモン
@@ -1352,9 +1353,9 @@ entity:
     name: サクヤモン
     cname: 咲耶兽
     phase: 究极体
-    evoLock: 巫女の錫杖
+    evoLock:
     evo: MP3900 攻撃力340 素早さ490、賢さ680,40以下,0,-,90以上,-,50以上,18以上,6
-    evoItem:
+    evoItem: 巫女の錫杖
     next:
   - key: X_6_9
     name: サーベルレオモン
@@ -1609,7 +1610,7 @@ entity:
     cname: 帝皇龙兽：圣骑士形态
     phase: 究极体
     evoLock:
-    evo: 物品オメガブレード
+    evo: Item:オメガブレード
     evoItem: オメガブレード
     next:
   - key: X_6_40
@@ -1617,7 +1618,7 @@ entity:
     cname: 奥米加兽
     phase: 究极体
     evoLock:
-    evo: 合体进化 メタルガルルモン(金属加鲁鲁兽)&ウォーグレイモン(战斗暴龙兽)
+    evo: 金属加鲁鲁兽&战斗暴龙兽
     evoItem: 聖騎士の証
     next:
       - オメガモンX抗体
@@ -1627,7 +1628,7 @@ entity:
     phase: 究极体
     evoLock:
     evo: 勇気のX抗体
-    evoItem:
+    evoItem: 勇気のX抗体
     next:
   - key: X_6_42
     name: ブラックウォーグレイモンX抗体
@@ -1650,7 +1651,7 @@ entity:
     cname: 混沌兽
     phase: 究极体
     evoLock:
-    evo: 合体进化 バンチョーレオモン(番长狮子兽)&ダークドラモン(暗龙兽)
+    evo: 番长狮子兽&暗龙兽
     evoItem: 混沌の魂
     next:
   - key: X_6_45
@@ -1682,7 +1683,7 @@ entity:
     cname: 混沌龙兽
     phase: 究极体
     evoLock:
-    evo: 物品クリムゾンメタル
+    evo: Item:クリムゾンメタル
     evoItem: クリムゾンメタル
     next:
   - key: X_6_49

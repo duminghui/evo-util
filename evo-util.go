@@ -19,7 +19,7 @@ func getEvoPathStr(evoPath []*data.EVONode) string {
 		if evoNode.Ord == 0 {
 			pathStr = fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
 		}
-		if entity.EvoLock != "无" {
+		if entity.EvoLock != "" {
 			pathStr = fmt.Sprintf("※%v", pathStr)
 		}
 		pathStrList = append(pathStrList, pathStr)
@@ -44,74 +44,101 @@ func printEntityInfo(entity *data.Entity) {
 }
 
 func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
-	mainStrTmplTmpl := "%%1v%%1v %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-s"
-	titleList := []string{"", "パラメータ", "体重", "育成ミス", "ご機嫌", "しつけ", "戦闘勝利", "技数", "[デコード レベル]", "必要数", "Evo Item"}
-	spaceMaxList := []int{1, getStrSpace(titleList[1]), getStrSpace(titleList[2]), getStrSpace(titleList[3]),
-		getStrSpace(titleList[4]), getStrSpace(titleList[5]), getStrSpace(titleList[6]),
-		getStrSpace(titleList[7]), getStrSpace(titleList[8]), getStrSpace(titleList[9]),
-		getStrSpace(titleList[10])}
-
+	mainStrTmplTmpl := "%%%vv %%%vv %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs"
+	titleList := []string{"※", "#", "", "パラメータ", "体重", "育成ミス", "ご機嫌", "しつけ", "戦闘勝利", "技数", "[デコード レベル]", "必要数", "EvoItem", "EvoLock"}
+	var spaceMaxList = [14]int{}
+	for idx, title := range titleList {
+		spaceMaxList[idx] = getStrSpace(title)
+	}
+	var infoListList [][]string
 	for _, ordInfo := range ordInfoList {
 		entity, _ := data.EntityMap[ordInfo.EKey]
-		title0Str := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
-		title0StrLen := getStrSpace(title0Str)
-		spaceMaxList[0] = int(math.Max(float64(spaceMaxList[0]), float64(title0StrLen)))
-		evoCondStrList := strings.Split(entity.Evo, ",")
-		for i := 0; i < len(evoCondStrList); i++ {
-			evoCondStr := getStrSpace(evoCondStrList[i])
-			idx := i + 1
-			spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(evoCondStr)))
+		var infoList []string
+
+		idx := 0
+		cFlag := ""
+		if entity.Key == cKey {
+			cFlag = "※"
 		}
+		spaceMaxList[idx] = 1
+		infoList = append(infoList, cFlag)
+
+		idx = 1
+		ordStr := fmt.Sprintf("%v", ordInfo.Ord)
+		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(len(ordStr))))
+		infoList = append(infoList, ordStr)
+
+		idx = 2
+		lockFlag := ""
+		if entity.EvoLock != "" {
+			lockFlag = "※"
+		}
+		name := fmt.Sprintf("%v(%v)%v", entity.Name, entity.CName, lockFlag)
+		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(name))))
+		infoList = append(infoList, name)
+
+		idx = 3
+		evoCondList := strings.Split(entity.Evo, ",")
+		fillLen := 0
+		evoCondStrListLen := len(evoCondList)
+		if evoCondStrListLen == 0 {
+			fillLen = 9
+		} else if evoCondStrListLen == 1 {
+			fillLen = 8
+		}
+		tmpIdx := idx
+		for i, evoCond := range evoCondList {
+			idx = tmpIdx + i
+			spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(evoCond))))
+			infoList = append(infoList, evoCond)
+		}
+		idx += evoCondStrListLen % 9
+		tmpIdx = idx
+		for i := 0; i < fillLen; i++ {
+			idx = tmpIdx + i
+			spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(1)))
+			infoList = append(infoList, "-")
+		}
+
+		idx = 12
+		evoItem := entity.EvoItem
+		if evoItem == "" {
+			evoItem = "-"
+		}
+		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(evoItem))))
+		infoList = append(infoList, evoItem)
+
+		idx = 13
+		lockFlag = "-"
+		if entity.EvoLock != "" {
+			lockFlag = "※"
+		}
+		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(lockFlag))))
+		infoList = append(infoList, lockFlag)
+		infoListList = append(infoListList, infoList)
 	}
 
 	var titleSpaceIList []interface{}
-	for i, v := range titleList {
-		titleSpaceIList = append(titleSpaceIList, getFillLen(spaceMaxList[i], v))
-	}
-	//* 1 xxx(xxx) .....
-	titleIList := []interface{}{"", ""}
-	for _, title := range titleList {
+	var titleIList []interface{}
+	for i, title := range titleList {
+		titleSpaceIList = append(titleSpaceIList, getFillLen(spaceMaxList[i], title))
 		titleIList = append(titleIList, title)
 	}
-
 	titleTmpl := fmt.Sprintf(mainStrTmplTmpl, titleSpaceIList...)
-	//fmt.Println(titleTmpl)
 	fmt.Printf(titleTmpl, titleIList...)
 	fmt.Println()
-	for _, ordInfo := range ordInfoList {
-		var evoInfoIList []interface{}
-		var evoCondSpaceIList []interface{}
-		entity, _ := data.EntityMap[ordInfo.EKey]
-		if entity.Key == cKey {
-			evoInfoIList = append(evoInfoIList, "※")
-		} else {
-			evoInfoIList = append(evoInfoIList, "")
-		}
-		evoInfoIList = append(evoInfoIList, ordInfo.Ord)
-		nameStr := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
-		evoInfoIList = append(evoInfoIList, nameStr)
-		evoCondSpaceIList = append(evoCondSpaceIList, getFillLen(spaceMaxList[0], nameStr))
 
-		evoCondStrList := strings.Split(entity.Evo, ",")
-		if len(evoCondStrList) == 0 {
-			evoInfoIList = append(evoInfoIList, "", "", "", "", "", "", "", "", "", "")
-			evoCondSpaceIList = append(evoCondSpaceIList, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-		} else if len(evoCondStrList) == 1 {
-			evoInfoIList = append(evoInfoIList, entity.Evo, "", "", "", "", "", "", "", "", "")
-			evoCondSpaceIList = append(evoCondSpaceIList, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-		} else {
-			for i, evoCond := range evoCondStrList {
-				evoInfoIList = append(evoInfoIList, evoCond)
-				evoCondSpaceIList = append(evoCondSpaceIList, getFillLen(spaceMaxList[i+1], evoCond))
-			}
-			evoInfoIList = append(evoInfoIList, entity.EvoItem)
+	for _, infoList := range infoListList {
+		var infoSpaceIList []interface{}
+		var infoIList []interface{}
+		for i, info := range infoList {
+			infoSpaceIList = append(infoSpaceIList, getFillLen(spaceMaxList[i], info))
+			infoIList = append(infoIList, info)
 		}
-		evoCondTmpl := fmt.Sprintf(mainStrTmplTmpl, evoCondSpaceIList...)
-		fmt.Printf(evoCondTmpl, evoInfoIList...)
+		infoTmpl := fmt.Sprintf(mainStrTmplTmpl, infoSpaceIList...)
+		fmt.Printf(infoTmpl, infoIList...)
 		fmt.Println()
-		//fmt.Println(evoCondTmpl, evoInfoIList)
 	}
-
 }
 
 func printEvoCompareInfo(entity *data.Entity) {
@@ -125,7 +152,7 @@ func printEvoCompareInfo(entity *data.Entity) {
 func getStrSpace(str string) int {
 	nameLen := utf8.RuneCountInString(str)
 	for _, c := range str {
-		if c >= utf8.RuneSelf {
+		if c >= utf8.RuneSelf && c != '※' {
 			nameLen++
 		}
 	}
@@ -212,7 +239,7 @@ func printLockInfo() {
 	maxNameSpace := 0
 	var entityList []*data.Entity
 	for _, entity := range data.AllList {
-		if entity.EvoLock != "无" {
+		if entity.EvoLock != "" {
 			idx++
 			name := fmt.Sprintf("%v(%v)", entity.Name, entity.CName)
 			maxNameSpace = int(math.Max(float64(maxNameSpace), float64(getStrSpace(name))))
@@ -229,14 +256,44 @@ func printLockInfo() {
 	}
 }
 
+func printPhaseList(phase string) {
+	var ordInfoList []data.OrdInfo
+	idx := 0
+	for _, entity := range data.AllList {
+		if entity.Phase == phase {
+			idx++
+			ordInfoList = append(ordInfoList, data.OrdInfo{Ord: idx, EKey: entity.Key})
+		}
+	}
+	printEntitiesInfo("", ordInfoList)
+}
+
 func main() {
-	t := flag.String("t", "", "方式:one,lock,up,down,comp")
+	t := flag.String("t", "", "方式:one,lock,phase,up,down,comp")
 	name := flag.String("n", "", "名称")
 	flag.Parse()
 	if *t == "one" {
 		printOnlyOnePath()
 	} else if *t == "lock" {
 		printLockInfo()
+	} else if *t == "phase" {
+		phaseList := []string{"幼生期1", "幼生期2", "成长期", "成熟期", "完全体", "究极体"}
+		if *name == "" {
+			fmt.Println(phaseList)
+		} else {
+			idx := -1
+			for i, phase := range phaseList {
+				if phase == *name {
+					idx = i
+					break
+				}
+			}
+			if idx == -1 {
+				fmt.Println(phaseList)
+			} else {
+				printPhaseList(*name)
+			}
+		}
 	} else {
 		if *name == "" {
 			fmt.Println("无名称输入")
