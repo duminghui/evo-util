@@ -266,22 +266,26 @@ func printPhaseList(phase string) {
 }
 
 func main() {
-	t := flag.String("t", "", "方式:one,lock,phase,up,down,comp")
-	name := flag.String("n", "", "名称")
-	fmt.Println("成長期に2才、成熟期に3才、完全体に6才、究極体に11才程で進化する。")
+	_t := flag.String("t", "", "方式:one,lock,phase,up,down,comp")
+	_name := flag.String("n", "", "名称")
 	flag.Parse()
-	if *t == "one" {
+	t := *_t
+	name := *_name
+	if t != "" {
+		fmt.Println("成長期に2才、成熟期に3才、完全体に6才、究極体に11才程で進化する。")
+	}
+	if t == "one" {
 		printOnlyOnePath()
-	} else if *t == "lock" {
+	} else if t == "lock" {
 		printLockInfo()
-	} else if *t == "phase" {
+	} else if t == "phase" {
 		phaseList := []string{"幼生期1", "幼生期2", "成长期", "成熟期", "完全体", "究极体"}
-		if *name == "" {
+		if name == "" {
 			fmt.Println(phaseList)
 		} else {
 			idx := -1
 			for i, phase := range phaseList {
-				if phase == *name {
+				if phase == name {
 					idx = i
 					break
 				}
@@ -289,23 +293,23 @@ func main() {
 			if idx == -1 {
 				fmt.Println(phaseList)
 			} else {
-				printPhaseList(*name)
+				printPhaseList(name)
 			}
 		}
 	} else {
-		if *name == "" {
+		if name == "" {
 			fmt.Println("无名称输入")
 			return
 		}
-		fmt.Printf("搜索: %v\n", *name)
+		fmt.Printf("搜索: %v\n", name)
 
-		entity, err := data.FindEntityByName(*name)
+		entity, err := data.FindEntityByName(name)
 		if err != nil {
-			fmt.Printf("查找'%v'出错: %v", *name, err)
+			fmt.Printf("查找'%v'出错: %v", name, err)
 			return
 		}
 
-		switch *t {
+		switch t {
 		case "up":
 			printUpEVOInfo(entity)
 		case "down":
