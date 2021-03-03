@@ -4,7 +4,7 @@ entity:
     cname: root
     phase: 无
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - 青色
@@ -19,7 +19,7 @@ entity:
     cname: 青色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ドドモン
@@ -28,7 +28,7 @@ entity:
     cname: 黄色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ボタモン
@@ -37,7 +37,7 @@ entity:
     cname: 赤色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ジャリモン
@@ -46,7 +46,7 @@ entity:
     cname: 緑色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ユラモン
@@ -55,7 +55,7 @@ entity:
     cname: 紫色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ポヨモン
@@ -64,7 +64,7 @@ entity:
     cname: 桃色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - バブモン
@@ -73,7 +73,7 @@ entity:
     cname: 灰色
     phase: 蛋
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - プニモン
@@ -82,7 +82,7 @@ entity:
     cname: 多多兽
     phase: 幼生期1
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ワニャモン
@@ -91,7 +91,7 @@ entity:
     cname: 黑球兽
     phase: 幼生期1
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - コロモン
@@ -99,7 +99,7 @@ entity:
     name: ジャリモン
     cname: 沙砾兽
     evoLock:
-    evo: 无
+    evo:
     phase: 幼生期1
     evoItem:
     next:
@@ -109,7 +109,7 @@ entity:
     cname: 浮球兽
     phase: 幼生期1
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - バドモン
@@ -118,7 +118,7 @@ entity:
     cname: 漂游兽
     phase: 幼生期1
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - トコモン
@@ -127,7 +127,7 @@ entity:
     cname: 泡泡兽
     phase: 幼生期1
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - モチモン
@@ -136,7 +136,7 @@ entity:
     cname: 普尼兽
     phase: 幼生期1
     evoLock:
-    evo: 无
+    evo:
     evoItem:
     next:
       - ツノモン
@@ -808,7 +808,7 @@ entity:
     cname: 大便兽
     phase: 成熟期
     evoLock: のろいゲージMAXで進化(合計16回ウンチ) or スカモン大王に進化させてもらう(逆進化も可能)
-    evo: -,-,-,-,-,-,-,-,0
+    evo:
     evoItem: ゴミカスデータ
     next:
   - key: X_4_26
@@ -1452,7 +1452,7 @@ entity:
     name: ビクトリーグレイモン
     cname: 胜利暴龙兽
     phase: 究极体
-    evoLock: 必须从6-20デュークモン公爵兽自然死亡的转生蛋培养
+    evoLock: 必须从デュークモン(公爵兽)自然死亡的转生蛋培养
     evo: HP5000 攻撃力620、防御力540 賢さ350,52以上,10以下,-,-,40以上,50以上,18以上,6
     evoItem: 巨大な破砕剣
     next:
@@ -1602,7 +1602,7 @@ entity:
     cname: 究极V龙兽X抗体
     phase: 究极体
     evoLock:
-    evo: 神速のX抗体
+    evo:
     evoItem: 神速のX抗体
     next:
   - key: X_6_39
@@ -1610,7 +1610,7 @@ entity:
     cname: 帝皇龙兽：圣骑士形态
     phase: 究极体
     evoLock:
-    evo: Item:オメガブレード
+    evo:
     evoItem: オメガブレード
     next:
   - key: X_6_40
@@ -1627,7 +1627,7 @@ entity:
     cname: 战斗暴龙兽X抗体
     phase: 究极体
     evoLock:
-    evo: 勇気のX抗体
+    evo:
     evoItem: 勇気のX抗体
     next:
   - key: X_6_42
@@ -1635,7 +1635,7 @@ entity:
     cname: 黑战斗暴龙兽X抗体
     phase: 究极体
     evoLock:
-    evo: 漆黒のX抗体
+    evo:
     evoItem: 漆黒のX抗体
     next:
   - key: X_6_43
@@ -1643,7 +1643,7 @@ entity:
     cname: 奥米加兽X抗体
     phase: 究极体
     evoLock:
-    evo: 終局のX抗体
+    evo:
     evoItem: 終局のX抗体
     next:
   - key: X_6_44
@@ -1659,7 +1659,7 @@ entity:
     cname: 公爵兽X抗体
     phase: 究极体
     evoLock:
-    evo: 至高のX抗体
+    evo:
     evoItem: 至高のX抗体
     next:
   - key: X_6_46
@@ -1667,7 +1667,7 @@ entity:
     cname: 别西卜兽X抗体
     phase: 究极体
     evoLock:
-    evo: 暴食のX抗体
+    evo:
     evoItem: 暴食のX抗体
     next:
   - key: X_6_47
@@ -1675,7 +1675,7 @@ entity:
     cname: 玛格纳兽X抗体
     phase: 究极体
     evoLock:
-    evo: 奇跡のX抗体
+    evo:
     evoItem: 奇跡のX抗体
     next:
   - key: X_6_48
@@ -1683,7 +1683,7 @@ entity:
     cname: 混沌龙兽
     phase: 究极体
     evoLock:
-    evo: Item:クリムゾンメタル
+    evo:
     evoItem: クリムゾンメタル
     next:
   - key: X_6_49
@@ -1691,7 +1691,7 @@ entity:
     cname: 蔷薇兽X抗体
     phase: 究极体
     evoLock:
-    evo: 真紅のX抗体
+    evo:
     evoItem: 真紅のX抗体
     next:
   - key: X_6_50
@@ -1699,7 +1699,7 @@ entity:
     cname: 艾可萨兽
     phase: 究极体
     evoLock:
-    evo: 竜帝の巨槍
+    evo:
     evoItem: 竜帝の巨槍
     next:
 
