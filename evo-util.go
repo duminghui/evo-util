@@ -39,6 +39,7 @@ func printEntityInfo(entity *data.Entity) {
 	fmt.Println("-------------------")
 	fmt.Println(entity.Phase)
 	fmt.Printf("EvoLock:%v\n", entity.EvoLock)
+	fmt.Printf("EvoItem:%v\n", entity.EvoItem)
 	fmt.Println("Evo Conditions:")
 	ordInfoList := []data.OrdInfo{
 		{
@@ -152,6 +153,10 @@ func printEvoCompareInfo(entity *data.Entity) {
 	if len(entity.P) == 0 {
 		printEntitiesInfo(entity.Key, []data.OrdInfo{{entity.Key, 1}})
 	}
+	fmt.Println("-------------------")
+	fmt.Println(entity.Phase)
+	fmt.Printf("EvoLock:%v\n", entity.EvoLock)
+	fmt.Printf("EvoItem:%v\n", entity.EvoItem)
 }
 
 func getStrSpace(str string) int {
