@@ -268,6 +268,7 @@ func printPhaseList(phase string) {
 func main() {
 	t := flag.String("t", "", "方式:one,lock,phase,up,down,comp")
 	name := flag.String("n", "", "名称")
+	fmt.Println("成長期に2才、成熟期に3才、完全体に6才、究極体に11才程で進化する。")
 	flag.Parse()
 	if *t == "one" {
 		printOnlyOnePath()
