@@ -18,11 +18,11 @@ func getEvoPathStr(evoPath []*data.EVONode) string {
 		entity := evoNode.Entity
 		lockFlag := ""
 		if entity.EvoLock != "" {
-			lockFlag = "🔒"
+			lockFlag = "△"
 		}
 		itemFlag := ""
 		if entity.Evo == "" && entity.EvoItem != "" {
-			itemFlag = "\U0001F9EA"
+			itemFlag = "ℹ"
 		}
 		ordStr := ""
 		if evoNode.Ord != 0 {
@@ -52,7 +52,7 @@ func printEntityInfo(entity *data.Entity) {
 }
 
 func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
-	mainStrTmplTmpl := "%%%vv %%%vv %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs"
+	mainStrTmplTmpl := "%%-%vv %%%vv %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs %%-%vs"
 	titleList := []string{"※", "#", "", "パラメータ", "体重", "育成ミス", "ご機嫌", "しつけ", "戦闘勝利", "技数", "[デコード レベル]", "必要数", "EvoItem", "EvoLock"}
 	var spaceMaxList = [14]int{}
 	for idx, title := range titleList {
@@ -66,9 +66,9 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		idx := 0
 		cFlag := ""
 		if entity.Key == cKey {
-			cFlag = "※"
+			cFlag = "▶︎"
 		}
-		spaceMaxList[idx] = 1
+		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(cFlag))))
 		infoList = append(infoList, cFlag)
 
 		idx = 1
@@ -114,7 +114,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		idx = 13
 		lockFlag := "-"
 		if entity.EvoLock != "" {
-			lockFlag = "🔒"
+			lockFlag = "△︎"
 		}
 		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(lockFlag))))
 		infoList = append(infoList, lockFlag)
@@ -160,6 +160,9 @@ func printEvoCompareInfo(entity *data.Entity) {
 }
 
 func getStrSpace(str string) int {
+	if str == "▶︎" {
+		return 2
+	}
 	nameLen := utf8.RuneCountInString(str)
 	for _, c := range str {
 		if c >= utf8.RuneSelf && c != '※' {
@@ -169,6 +172,9 @@ func getStrSpace(str string) int {
 	return nameLen
 }
 func getFillLen(fillSize int, str string) int {
+	if str == "▶︎" {
+		return 2
+	}
 	outAsciiLen := 0
 	for _, c := range str {
 		if c >= utf8.RuneSelf && c != '※' {
