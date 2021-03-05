@@ -66,7 +66,7 @@ func printEntitiesInfo(cKey string, ordInfoList []data.OrdInfo) {
 		idx := 0
 		cFlag := ""
 		if entity.Key == cKey {
-			cFlag = "▶︎"
+			cFlag = "※"
 		}
 		spaceMaxList[idx] = int(math.Max(float64(spaceMaxList[idx]), float64(getStrSpace(cFlag))))
 		infoList = append(infoList, cFlag)
